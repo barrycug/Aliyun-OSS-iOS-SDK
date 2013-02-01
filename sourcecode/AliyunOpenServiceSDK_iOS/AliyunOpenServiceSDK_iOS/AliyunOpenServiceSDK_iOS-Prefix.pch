@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'AliyunOpenServiceSDK_iOS' target in the 'AliyunOpenServiceSDK_iOS' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif

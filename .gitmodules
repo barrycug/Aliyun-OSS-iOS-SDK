@@ -1,0 +1,3 @@
+[submodule "sourcecode/samples_ios/Aliyun-OSS-iOS-SDK"]
+	path = sourcecode/samples_ios/Aliyun-OSS-iOS-SDK
+	url = /Users/esri/Documents/project/aliyun/objc/Aliyun-OSS-iOS-SDK

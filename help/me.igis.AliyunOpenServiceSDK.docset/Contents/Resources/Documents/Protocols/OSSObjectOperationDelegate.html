@@ -1,0 +1,1278 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>OSSObjectOperationDelegate Protocol Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.0.5 (build 789)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">AliyunOpenServiceSDK </a></h1>
+				<a id="developerHome" href="../index.html">igis.me</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">OSSObjectOperationDelegate Protocol Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/OSSObjectOperationCopyObjectFailed:error:">&nbsp;&nbsp;&nbsp;&nbsp;- OSSObjectOperationCopyObjectFailed:error:</option>
+	
+	<option value="//api/name/OSSObjectOperationCopyObjectFinish:result:">&nbsp;&nbsp;&nbsp;&nbsp;- OSSObjectOperationCopyObjectFinish:result:</option>
+	
+	<option value="//api/name/OSSObjectOperationDeleteMultipleObjectsFailed:error:">&nbsp;&nbsp;&nbsp;&nbsp;- OSSObjectOperationDeleteMultipleObjectsFailed:error:</option>
+	
+	<option value="//api/name/OSSObjectOperationDeleteMultipleObjectsFinish:bucketName:result:">&nbsp;&nbsp;&nbsp;&nbsp;- OSSObjectOperationDeleteMultipleObjectsFinish:bucketName:result:</option>
+	
+	<option value="//api/name/OSSObjectOperationDeleteObjectFailed:error:">&nbsp;&nbsp;&nbsp;&nbsp;- OSSObjectOperationDeleteObjectFailed:error:</option>
+	
+	<option value="//api/name/OSSObjectOperationDeleteObjectFinish:bucketName:key:">&nbsp;&nbsp;&nbsp;&nbsp;- OSSObjectOperationDeleteObjectFinish:bucketName:key:</option>
+	
+	<option value="//api/name/OSSObjectOperationFetchObjectAndWriteToFileFailed:error:">&nbsp;&nbsp;&nbsp;&nbsp;- OSSObjectOperationFetchObjectAndWriteToFileFailed:error:</option>
+	
+	<option value="//api/name/OSSObjectOperationFetchObjectAndWriteToFileFinish:result:isWritedToFile:">&nbsp;&nbsp;&nbsp;&nbsp;- OSSObjectOperationFetchObjectAndWriteToFileFinish:result:isWritedToFile:</option>
+	
+	<option value="//api/name/OSSObjectOperationFetchObjectFailed:error:">&nbsp;&nbsp;&nbsp;&nbsp;- OSSObjectOperationFetchObjectFailed:error:</option>
+	
+	<option value="//api/name/OSSObjectOperationFetchObjectFinish:result:">&nbsp;&nbsp;&nbsp;&nbsp;- OSSObjectOperationFetchObjectFinish:result:</option>
+	
+	<option value="//api/name/OSSObjectOperationFetchObjectMetadataFailed:error:">&nbsp;&nbsp;&nbsp;&nbsp;- OSSObjectOperationFetchObjectMetadataFailed:error:</option>
+	
+	<option value="//api/name/OSSObjectOperationFetchObjectMetadataFinish:result:">&nbsp;&nbsp;&nbsp;&nbsp;- OSSObjectOperationFetchObjectMetadataFinish:result:</option>
+	
+	<option value="//api/name/OSSObjectOperationNetWorkFailed:error:">&nbsp;&nbsp;&nbsp;&nbsp;- OSSObjectOperationNetWorkFailed:error:</option>
+	
+	<option value="//api/name/OSSObjectOperationPutObjectFailed:error:">&nbsp;&nbsp;&nbsp;&nbsp;- OSSObjectOperationPutObjectFailed:error:</option>
+	
+	<option value="//api/name/OSSObjectOperationPutObjectFinish:result:">&nbsp;&nbsp;&nbsp;&nbsp;- OSSObjectOperationPutObjectFinish:result:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/OSSObjectOperationCopyObjectFailed:error:">OSSObjectOperationCopyObjectFailed:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/OSSObjectOperationCopyObjectFinish:result:">OSSObjectOperationCopyObjectFinish:result:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/OSSObjectOperationDeleteMultipleObjectsFailed:error:">OSSObjectOperationDeleteMultipleObjectsFailed:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/OSSObjectOperationDeleteMultipleObjectsFinish:bucketName:result:">OSSObjectOperationDeleteMultipleObjectsFinish:bucketName:result:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/OSSObjectOperationDeleteObjectFailed:error:">OSSObjectOperationDeleteObjectFailed:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/OSSObjectOperationDeleteObjectFinish:bucketName:key:">OSSObjectOperationDeleteObjectFinish:bucketName:key:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/OSSObjectOperationFetchObjectAndWriteToFileFailed:error:">OSSObjectOperationFetchObjectAndWriteToFileFailed:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/OSSObjectOperationFetchObjectAndWriteToFileFinish:result:isWritedToFile:">OSSObjectOperationFetchObjectAndWriteToFileFinish:result:isWritedToFile:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/OSSObjectOperationFetchObjectFailed:error:">OSSObjectOperationFetchObjectFailed:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/OSSObjectOperationFetchObjectFinish:result:">OSSObjectOperationFetchObjectFinish:result:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/OSSObjectOperationFetchObjectMetadataFailed:error:">OSSObjectOperationFetchObjectMetadataFailed:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/OSSObjectOperationFetchObjectMetadataFinish:result:">OSSObjectOperationFetchObjectMetadataFinish:result:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/OSSObjectOperationNetWorkFailed:error:">OSSObjectOperationNetWorkFailed:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/OSSObjectOperationPutObjectFailed:error:">OSSObjectOperationPutObjectFailed:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/OSSObjectOperationPutObjectFinish:result:">OSSObjectOperationPutObjectFinish:result:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="OSSObjectOperationDelegate Protocol Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">OSSObjectOperationDelegate Protocol Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">OSSObjectOperation.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p><a href="OSSObjectOperationDelegate.html">OSSObjectOperationDelegate</a> 协议，声明OSSObjectOperation相关方法</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/OSSObjectOperationPutObjectFinish:result:">&ndash;&nbsp;OSSObjectOperationPutObjectFinish:result:</a></code>
+		<span class="tooltip"><p>PutObject 成功</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/OSSObjectOperationPutObjectFailed:error:">&ndash;&nbsp;OSSObjectOperationPutObjectFailed:error:</a></code>
+		<span class="tooltip"><p>PutObject 失败</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/OSSObjectOperationFetchObjectFinish:result:">&ndash;&nbsp;OSSObjectOperationFetchObjectFinish:result:</a></code>
+		<span class="tooltip"><p>fetchObject 成功</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/OSSObjectOperationFetchObjectFailed:error:">&ndash;&nbsp;OSSObjectOperationFetchObjectFailed:error:</a></code>
+		<span class="tooltip"><p>FetchObject 失败</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/OSSObjectOperationFetchObjectAndWriteToFileFinish:result:isWritedToFile:">&ndash;&nbsp;OSSObjectOperationFetchObjectAndWriteToFileFinish:result:isWritedToFile:</a></code>
+		<span class="tooltip"><p>FetchObjectAndWriteToFile 成功</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/OSSObjectOperationFetchObjectAndWriteToFileFailed:error:">&ndash;&nbsp;OSSObjectOperationFetchObjectAndWriteToFileFailed:error:</a></code>
+		<span class="tooltip"><p>FetchObjectAndWriteToFile 失败</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/OSSObjectOperationFetchObjectMetadataFinish:result:">&ndash;&nbsp;OSSObjectOperationFetchObjectMetadataFinish:result:</a></code>
+		<span class="tooltip"><p>fetchObject Metadata成功</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/OSSObjectOperationFetchObjectMetadataFailed:error:">&ndash;&nbsp;OSSObjectOperationFetchObjectMetadataFailed:error:</a></code>
+		<span class="tooltip"><p>Fetch<a href="../Classes/ObjectMetadata.html">ObjectMetadata</a> 失败</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/OSSObjectOperationCopyObjectFinish:result:">&ndash;&nbsp;OSSObjectOperationCopyObjectFinish:result:</a></code>
+		<span class="tooltip"><p>CopyObject成功</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/OSSObjectOperationCopyObjectFailed:error:">&ndash;&nbsp;OSSObjectOperationCopyObjectFailed:error:</a></code>
+		<span class="tooltip"><p>CopyObject 失败</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/OSSObjectOperationDeleteObjectFinish:bucketName:key:">&ndash;&nbsp;OSSObjectOperationDeleteObjectFinish:bucketName:key:</a></code>
+		<span class="tooltip"><p>deleteObject成功</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/OSSObjectOperationDeleteObjectFailed:error:">&ndash;&nbsp;OSSObjectOperationDeleteObjectFailed:error:</a></code>
+		<span class="tooltip"><p>DeleteObject 失败</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/OSSObjectOperationDeleteMultipleObjectsFinish:bucketName:result:">&ndash;&nbsp;OSSObjectOperationDeleteMultipleObjectsFinish:bucketName:result:</a></code>
+		<span class="tooltip"><p>deleteMultipleObjects成功</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/OSSObjectOperationDeleteMultipleObjectsFailed:error:">&ndash;&nbsp;OSSObjectOperationDeleteMultipleObjectsFailed:error:</a></code>
+		<span class="tooltip"><p>DeleteMultipleObject 失败</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/OSSObjectOperationNetWorkFailed:error:">&ndash;&nbsp;OSSObjectOperationNetWorkFailed:error:</a></code>
+		<span class="tooltip"><p>network 失败</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/OSSObjectOperationCopyObjectFailed:error:" title="OSSObjectOperationCopyObjectFailed:error:"></a>
+	<h3 class="subsubtitle method-title">OSSObjectOperationCopyObjectFailed:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>CopyObject 失败</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)OSSObjectOperationCopyObjectFailed:(OSSObjectOperation *)<em>ossObjectOperation</em> error:(OSSError *)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>ossObjectOperation</em></dt>
+			<dd><p><a href="../Classes/OSSObjectOperation.html">OSSObjectOperation</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p><a href="../Classes/OSSError.html">OSSError</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>CopyObject 失败</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSObjectOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/OSSObjectOperationCopyObjectFinish:result:" title="OSSObjectOperationCopyObjectFinish:result:"></a>
+	<h3 class="subsubtitle method-title">OSSObjectOperationCopyObjectFinish:result:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>CopyObject成功</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)OSSObjectOperationCopyObjectFinish:(OSSObjectOperation *)<em>ossObjectOperation</em> result:(CopyObjectResult *)<em>result</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>ossObjectOperation</em></dt>
+			<dd><p><a href="../Classes/OSSObjectOperation.html">OSSObjectOperation</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>result</em></dt>
+			<dd><p><a href="../Classes/CopyObjectResult.html">CopyObjectResult</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>CopyObject成功</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSObjectOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/OSSObjectOperationDeleteMultipleObjectsFailed:error:" title="OSSObjectOperationDeleteMultipleObjectsFailed:error:"></a>
+	<h3 class="subsubtitle method-title">OSSObjectOperationDeleteMultipleObjectsFailed:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>DeleteMultipleObject 失败</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)OSSObjectOperationDeleteMultipleObjectsFailed:(OSSObjectOperation *)<em>ossObjectOperation</em> error:(OSSError *)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>ossObjectOperation</em></dt>
+			<dd><p><a href="../Classes/OSSObjectOperation.html">OSSObjectOperation</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p><a href="../Classes/OSSError.html">OSSError</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>DeleteMultipleObject 失败</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSObjectOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/OSSObjectOperationDeleteMultipleObjectsFinish:bucketName:result:" title="OSSObjectOperationDeleteMultipleObjectsFinish:bucketName:result:"></a>
+	<h3 class="subsubtitle method-title">OSSObjectOperationDeleteMultipleObjectsFinish:bucketName:result:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>deleteMultipleObjects成功</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)OSSObjectOperationDeleteMultipleObjectsFinish:(OSSObjectOperation *)<em>ossObjectOperation</em> bucketName:(NSString *)<em>bucketName</em> result:(DeleteObjectsResult *)<em>result</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>ossObjectOperation</em></dt>
+			<dd><p><a href="../Classes/OSSObjectOperation.html">OSSObjectOperation</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>bucketName</em></dt>
+			<dd><p>NSString</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>result</em></dt>
+			<dd><p><a href="../Classes/DeleteObjectsResult.html">DeleteObjectsResult</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>deleteMultipleObjects成功</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSObjectOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/OSSObjectOperationDeleteObjectFailed:error:" title="OSSObjectOperationDeleteObjectFailed:error:"></a>
+	<h3 class="subsubtitle method-title">OSSObjectOperationDeleteObjectFailed:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>DeleteObject 失败</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)OSSObjectOperationDeleteObjectFailed:(OSSObjectOperation *)<em>ossObjectOperation</em> error:(OSSError *)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>ossObjectOperation</em></dt>
+			<dd><p><a href="../Classes/OSSObjectOperation.html">OSSObjectOperation</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p><a href="../Classes/OSSError.html">OSSError</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>DeleteObject 失败</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSObjectOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/OSSObjectOperationDeleteObjectFinish:bucketName:key:" title="OSSObjectOperationDeleteObjectFinish:bucketName:key:"></a>
+	<h3 class="subsubtitle method-title">OSSObjectOperationDeleteObjectFinish:bucketName:key:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>deleteObject成功</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)OSSObjectOperationDeleteObjectFinish:(OSSObjectOperation *)<em>ossObjectOperation</em> bucketName:(NSString *)<em>bucketName</em> key:(NSString *)<em>key</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>ossObjectOperation</em></dt>
+			<dd><p><a href="../Classes/OSSObjectOperation.html">OSSObjectOperation</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>bucketName</em></dt>
+			<dd><p>NSString</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>key</em></dt>
+			<dd><p>NSString</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>deleteObject成功</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSObjectOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/OSSObjectOperationFetchObjectAndWriteToFileFailed:error:" title="OSSObjectOperationFetchObjectAndWriteToFileFailed:error:"></a>
+	<h3 class="subsubtitle method-title">OSSObjectOperationFetchObjectAndWriteToFileFailed:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>FetchObjectAndWriteToFile 失败</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)OSSObjectOperationFetchObjectAndWriteToFileFailed:(OSSObjectOperation *)<em>ossObjectOperation</em> error:(OSSError *)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>ossObjectOperation</em></dt>
+			<dd><p><a href="../Classes/OSSObjectOperation.html">OSSObjectOperation</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p><a href="../Classes/OSSError.html">OSSError</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>FetchObjectAndWriteToFile 失败</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSObjectOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/OSSObjectOperationFetchObjectAndWriteToFileFinish:result:isWritedToFile:" title="OSSObjectOperationFetchObjectAndWriteToFileFinish:result:isWritedToFile:"></a>
+	<h3 class="subsubtitle method-title">OSSObjectOperationFetchObjectAndWriteToFileFinish:result:isWritedToFile:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>FetchObjectAndWriteToFile 成功</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)OSSObjectOperationFetchObjectAndWriteToFileFinish:(OSSObjectOperation *)<em>ossObjectOperation</em> result:(OSSObject *)<em>result</em> isWritedToFile:(BOOL)<em>isWritedToFile</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>ossObjectOperation</em></dt>
+			<dd><p><a href="../Classes/OSSObjectOperation.html">OSSObjectOperation</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>result</em></dt>
+			<dd><p><a href="../Classes/OSSObject.html">OSSObject</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>isWritedToFile</em></dt>
+			<dd><p>BOOL</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>FetchObjectAndWriteToFile 成功</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSObjectOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/OSSObjectOperationFetchObjectFailed:error:" title="OSSObjectOperationFetchObjectFailed:error:"></a>
+	<h3 class="subsubtitle method-title">OSSObjectOperationFetchObjectFailed:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>FetchObject 失败</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)OSSObjectOperationFetchObjectFailed:(OSSObjectOperation *)<em>ossObjectOperation</em> error:(OSSError *)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>ossObjectOperation</em></dt>
+			<dd><p><a href="../Classes/OSSObjectOperation.html">OSSObjectOperation</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p><a href="../Classes/OSSError.html">OSSError</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>FetchObject 失败</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSObjectOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/OSSObjectOperationFetchObjectFinish:result:" title="OSSObjectOperationFetchObjectFinish:result:"></a>
+	<h3 class="subsubtitle method-title">OSSObjectOperationFetchObjectFinish:result:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>fetchObject 成功</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)OSSObjectOperationFetchObjectFinish:(OSSObjectOperation *)<em>ossObjectOperation</em> result:(OSSObject *)<em>result</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>ossObjectOperation</em></dt>
+			<dd><p><a href="../Classes/OSSObjectOperation.html">OSSObjectOperation</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>result</em></dt>
+			<dd><p><a href="../Classes/OSSObject.html">OSSObject</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>fetchObject 成功</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSObjectOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/OSSObjectOperationFetchObjectMetadataFailed:error:" title="OSSObjectOperationFetchObjectMetadataFailed:error:"></a>
+	<h3 class="subsubtitle method-title">OSSObjectOperationFetchObjectMetadataFailed:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Fetch<a href="../Classes/ObjectMetadata.html">ObjectMetadata</a> 失败</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)OSSObjectOperationFetchObjectMetadataFailed:(OSSObjectOperation *)<em>ossObjectOperation</em> error:(OSSError *)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>ossObjectOperation</em></dt>
+			<dd><p><a href="../Classes/OSSObjectOperation.html">OSSObjectOperation</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p><a href="../Classes/OSSError.html">OSSError</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Fetch<a href="../Classes/ObjectMetadata.html">ObjectMetadata</a> 失败</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSObjectOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/OSSObjectOperationFetchObjectMetadataFinish:result:" title="OSSObjectOperationFetchObjectMetadataFinish:result:"></a>
+	<h3 class="subsubtitle method-title">OSSObjectOperationFetchObjectMetadataFinish:result:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>fetchObject Metadata成功</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)OSSObjectOperationFetchObjectMetadataFinish:(OSSObjectOperation *)<em>ossObjectOperation</em> result:(ObjectMetadata *)<em>result</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>ossObjectOperation</em></dt>
+			<dd><p><a href="../Classes/OSSObjectOperation.html">OSSObjectOperation</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>result</em></dt>
+			<dd><p><a href="../Classes/ObjectMetadata.html">ObjectMetadata</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>fetchObject Metadata成功</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSObjectOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/OSSObjectOperationNetWorkFailed:error:" title="OSSObjectOperationNetWorkFailed:error:"></a>
+	<h3 class="subsubtitle method-title">OSSObjectOperationNetWorkFailed:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>network 失败</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)OSSObjectOperationNetWorkFailed:(OSSObjectOperation *)<em>ossObjectOperation</em> error:(OSSError *)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>ossObjectOperation</em></dt>
+			<dd><p><a href="../Classes/OSSObjectOperation.html">OSSObjectOperation</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p><a href="../Classes/OSSError.html">OSSError</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>network 失败</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSObjectOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/OSSObjectOperationPutObjectFailed:error:" title="OSSObjectOperationPutObjectFailed:error:"></a>
+	<h3 class="subsubtitle method-title">OSSObjectOperationPutObjectFailed:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>PutObject 失败</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)OSSObjectOperationPutObjectFailed:(OSSObjectOperation *)<em>ossObjectOperation</em> error:(OSSError *)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>ossObjectOperation</em></dt>
+			<dd><p><a href="../Classes/OSSObjectOperation.html">OSSObjectOperation</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p><a href="../Classes/OSSError.html">OSSError</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>PutObject 失败</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSObjectOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/OSSObjectOperationPutObjectFinish:result:" title="OSSObjectOperationPutObjectFinish:result:"></a>
+	<h3 class="subsubtitle method-title">OSSObjectOperationPutObjectFinish:result:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>PutObject 成功</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)OSSObjectOperationPutObjectFinish:(OSSObjectOperation *)<em>ossObjectOperation</em> result:(PutObjectResult *)<em>result</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>ossObjectOperation</em></dt>
+			<dd><p><a href="../Classes/OSSObjectOperation.html">OSSObjectOperation</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>result</em></dt>
+			<dd><p><a href="../Classes/PutObjectResult.html">PutObjectResult</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>PutObject 成功</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSObjectOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2012 igis.me. All rights reserved. (Last updated: 2012-09-01)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 789)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

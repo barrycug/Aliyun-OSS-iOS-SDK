@@ -1,0 +1,1263 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>OTSTableOperationDelegate Protocol Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.0.5 (build 789)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">AliyunOpenServiceSDK </a></h1>
+				<a id="developerHome" href="../index.html">igis.me</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">OTSTableOperationDelegate Protocol Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/tableOperationCreateTableFailed:error:">&nbsp;&nbsp;&nbsp;&nbsp;- tableOperationCreateTableFailed:error:</option>
+	
+	<option value="//api/name/tableOperationCreateTableFinished:result:">&nbsp;&nbsp;&nbsp;&nbsp;- tableOperationCreateTableFinished:result:</option>
+	
+	<option value="//api/name/tableOperationCreateTableGroupFailed:error:">&nbsp;&nbsp;&nbsp;&nbsp;- tableOperationCreateTableGroupFailed:error:</option>
+	
+	<option value="//api/name/tableOperationCreateTableGroupFinished:result:">&nbsp;&nbsp;&nbsp;&nbsp;- tableOperationCreateTableGroupFinished:result:</option>
+	
+	<option value="//api/name/tableOperationDeleteTableFailed:error:">&nbsp;&nbsp;&nbsp;&nbsp;- tableOperationDeleteTableFailed:error:</option>
+	
+	<option value="//api/name/tableOperationDeleteTableFinished:result:">&nbsp;&nbsp;&nbsp;&nbsp;- tableOperationDeleteTableFinished:result:</option>
+	
+	<option value="//api/name/tableOperationDeleteTableGroupFailed:error:">&nbsp;&nbsp;&nbsp;&nbsp;- tableOperationDeleteTableGroupFailed:error:</option>
+	
+	<option value="//api/name/tableOperationDeleteTableGroupFinished:result:">&nbsp;&nbsp;&nbsp;&nbsp;- tableOperationDeleteTableGroupFinished:result:</option>
+	
+	<option value="//api/name/tableOperationFetchTableMetaFailed:error:">&nbsp;&nbsp;&nbsp;&nbsp;- tableOperationFetchTableMetaFailed:error:</option>
+	
+	<option value="//api/name/tableOperationFetchTableMetaFinished:result:">&nbsp;&nbsp;&nbsp;&nbsp;- tableOperationFetchTableMetaFinished:result:</option>
+	
+	<option value="//api/name/tableOperationListTableGroupFailed:error:">&nbsp;&nbsp;&nbsp;&nbsp;- tableOperationListTableGroupFailed:error:</option>
+	
+	<option value="//api/name/tableOperationListTableGroupFinished:result:">&nbsp;&nbsp;&nbsp;&nbsp;- tableOperationListTableGroupFinished:result:</option>
+	
+	<option value="//api/name/tableOperationListTablesFailed:error:">&nbsp;&nbsp;&nbsp;&nbsp;- tableOperationListTablesFailed:error:</option>
+	
+	<option value="//api/name/tableOperationListTablesFinished:result:">&nbsp;&nbsp;&nbsp;&nbsp;- tableOperationListTablesFinished:result:</option>
+	
+	<option value="//api/name/tableOperationNetworkError:error:">&nbsp;&nbsp;&nbsp;&nbsp;- tableOperationNetworkError:error:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tableOperationCreateTableFailed:error:">tableOperationCreateTableFailed:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tableOperationCreateTableFinished:result:">tableOperationCreateTableFinished:result:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tableOperationCreateTableGroupFailed:error:">tableOperationCreateTableGroupFailed:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tableOperationCreateTableGroupFinished:result:">tableOperationCreateTableGroupFinished:result:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tableOperationDeleteTableFailed:error:">tableOperationDeleteTableFailed:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tableOperationDeleteTableFinished:result:">tableOperationDeleteTableFinished:result:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tableOperationDeleteTableGroupFailed:error:">tableOperationDeleteTableGroupFailed:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tableOperationDeleteTableGroupFinished:result:">tableOperationDeleteTableGroupFinished:result:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tableOperationFetchTableMetaFailed:error:">tableOperationFetchTableMetaFailed:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tableOperationFetchTableMetaFinished:result:">tableOperationFetchTableMetaFinished:result:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tableOperationListTableGroupFailed:error:">tableOperationListTableGroupFailed:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tableOperationListTableGroupFinished:result:">tableOperationListTableGroupFinished:result:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tableOperationListTablesFailed:error:">tableOperationListTablesFailed:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tableOperationListTablesFinished:result:">tableOperationListTablesFinished:result:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tableOperationNetworkError:error:">tableOperationNetworkError:error:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="OTSTableOperationDelegate Protocol Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">OTSTableOperationDelegate Protocol Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">OTSTableOperation.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p><a href="OTSTableOperationDelegate.html">OTSTableOperationDelegate</a></p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/tableOperationNetworkError:error:">&ndash;&nbsp;tableOperationNetworkError:error:</a></code>
+		<span class="tooltip"><p>网络错误响应</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/tableOperationCreateTableFinished:result:">&ndash;&nbsp;tableOperationCreateTableFinished:result:</a></code>
+		<span class="tooltip"><p>创建表成功</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/tableOperationCreateTableFailed:error:">&ndash;&nbsp;tableOperationCreateTableFailed:error:</a></code>
+		<span class="tooltip"><p>创建表失败</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/tableOperationListTablesFinished:result:">&ndash;&nbsp;tableOperationListTablesFinished:result:</a></code>
+		<span class="tooltip"><p>罗列表成功</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/tableOperationListTablesFailed:error:">&ndash;&nbsp;tableOperationListTablesFailed:error:</a></code>
+		<span class="tooltip"><p>罗列表失败</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/tableOperationDeleteTableFinished:result:">&ndash;&nbsp;tableOperationDeleteTableFinished:result:</a></code>
+		<span class="tooltip"><p>删除表成功</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/tableOperationDeleteTableFailed:error:">&ndash;&nbsp;tableOperationDeleteTableFailed:error:</a></code>
+		<span class="tooltip"><p>删除表失败</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/tableOperationFetchTableMetaFinished:result:">&ndash;&nbsp;tableOperationFetchTableMetaFinished:result:</a></code>
+		<span class="tooltip"><p>获取表元数据成功</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/tableOperationFetchTableMetaFailed:error:">&ndash;&nbsp;tableOperationFetchTableMetaFailed:error:</a></code>
+		<span class="tooltip"><p>获取表元数据失败</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/tableOperationCreateTableGroupFinished:result:">&ndash;&nbsp;tableOperationCreateTableGroupFinished:result:</a></code>
+		<span class="tooltip"><p>创建表组成功</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/tableOperationCreateTableGroupFailed:error:">&ndash;&nbsp;tableOperationCreateTableGroupFailed:error:</a></code>
+		<span class="tooltip"><p>创建表组失败</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/tableOperationListTableGroupFinished:result:">&ndash;&nbsp;tableOperationListTableGroupFinished:result:</a></code>
+		<span class="tooltip"><p>罗列表组成功</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/tableOperationListTableGroupFailed:error:">&ndash;&nbsp;tableOperationListTableGroupFailed:error:</a></code>
+		<span class="tooltip"><p>罗列表组失败</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/tableOperationDeleteTableGroupFinished:result:">&ndash;&nbsp;tableOperationDeleteTableGroupFinished:result:</a></code>
+		<span class="tooltip"><p>罗删除表组成功</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/tableOperationDeleteTableGroupFailed:error:">&ndash;&nbsp;tableOperationDeleteTableGroupFailed:error:</a></code>
+		<span class="tooltip"><p>删除表组失败</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/tableOperationCreateTableFailed:error:" title="tableOperationCreateTableFailed:error:"></a>
+	<h3 class="subsubtitle method-title">tableOperationCreateTableFailed:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>创建表失败</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)tableOperationCreateTableFailed:(OTSTableOperation *)<em>op</em> error:(OTSError *)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>op</em></dt>
+			<dd><p><a href="../Classes/OTSTableOperation.html">OTSTableOperation</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p><a href="../Classes/OTSError.html">OTSError</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>创建表失败</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OTSTableOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/tableOperationCreateTableFinished:result:" title="tableOperationCreateTableFinished:result:"></a>
+	<h3 class="subsubtitle method-title">tableOperationCreateTableFinished:result:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>创建表成功</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)tableOperationCreateTableFinished:(OTSTableOperation *)<em>op</em> result:(CreateTableResult *)<em>result</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>op</em></dt>
+			<dd><p><a href="../Classes/OTSTableOperation.html">OTSTableOperation</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>result</em></dt>
+			<dd><p><a href="../Classes/CreateTableResult.html">CreateTableResult</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>创建表成功</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OTSTableOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/tableOperationCreateTableGroupFailed:error:" title="tableOperationCreateTableGroupFailed:error:"></a>
+	<h3 class="subsubtitle method-title">tableOperationCreateTableGroupFailed:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>创建表组失败</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)tableOperationCreateTableGroupFailed:(OTSTableOperation *)<em>op</em> error:(OTSError *)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>op</em></dt>
+			<dd><p><a href="../Classes/OTSTableOperation.html">OTSTableOperation</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p><a href="../Classes/OTSError.html">OTSError</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>创建表组失败</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OTSTableOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/tableOperationCreateTableGroupFinished:result:" title="tableOperationCreateTableGroupFinished:result:"></a>
+	<h3 class="subsubtitle method-title">tableOperationCreateTableGroupFinished:result:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>创建表组成功</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)tableOperationCreateTableGroupFinished:(OTSTableOperation *)<em>op</em> result:(CreateTableGroupResult *)<em>result</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>op</em></dt>
+			<dd><p><a href="../Classes/OTSTableOperation.html">OTSTableOperation</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>result</em></dt>
+			<dd><p><a href="../Classes/CreateTableGroupResult.html">CreateTableGroupResult</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>创建表组成功</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OTSTableOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/tableOperationDeleteTableFailed:error:" title="tableOperationDeleteTableFailed:error:"></a>
+	<h3 class="subsubtitle method-title">tableOperationDeleteTableFailed:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>删除表失败</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)tableOperationDeleteTableFailed:(OTSTableOperation *)<em>op</em> error:(OTSError *)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>op</em></dt>
+			<dd><p><a href="../Classes/OTSTableOperation.html">OTSTableOperation</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p><a href="../Classes/OTSError.html">OTSError</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>删除表失败</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OTSTableOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/tableOperationDeleteTableFinished:result:" title="tableOperationDeleteTableFinished:result:"></a>
+	<h3 class="subsubtitle method-title">tableOperationDeleteTableFinished:result:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>删除表成功</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)tableOperationDeleteTableFinished:(OTSTableOperation *)<em>op</em> result:(NSString *)<em>result</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>op</em></dt>
+			<dd><p><a href="../Classes/OTSTableOperation.html">OTSTableOperation</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>result</em></dt>
+			<dd><p>NSString</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>删除表成功</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OTSTableOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/tableOperationDeleteTableGroupFailed:error:" title="tableOperationDeleteTableGroupFailed:error:"></a>
+	<h3 class="subsubtitle method-title">tableOperationDeleteTableGroupFailed:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>删除表组失败</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)tableOperationDeleteTableGroupFailed:(OTSTableOperation *)<em>op</em> error:(OTSError *)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>op</em></dt>
+			<dd><p><a href="../Classes/OTSTableOperation.html">OTSTableOperation</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p><a href="../Classes/OTSError.html">OTSError</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>删除表组失败</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OTSTableOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/tableOperationDeleteTableGroupFinished:result:" title="tableOperationDeleteTableGroupFinished:result:"></a>
+	<h3 class="subsubtitle method-title">tableOperationDeleteTableGroupFinished:result:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>罗删除表组成功</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)tableOperationDeleteTableGroupFinished:(OTSTableOperation *)<em>op</em> result:(NSString *)<em>result</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>op</em></dt>
+			<dd><p><a href="../Classes/OTSTableOperation.html">OTSTableOperation</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>result</em></dt>
+			<dd><p><a href="../Classes/CreateTableGroupResult.html">CreateTableGroupResult</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>罗删除表组成功</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OTSTableOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/tableOperationFetchTableMetaFailed:error:" title="tableOperationFetchTableMetaFailed:error:"></a>
+	<h3 class="subsubtitle method-title">tableOperationFetchTableMetaFailed:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>获取表元数据失败</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)tableOperationFetchTableMetaFailed:(OTSTableOperation *)<em>op</em> error:(OTSError *)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>op</em></dt>
+			<dd><p><a href="../Classes/OTSTableOperation.html">OTSTableOperation</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p><a href="../Classes/OTSError.html">OTSError</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>获取表元数据失败</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OTSTableOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/tableOperationFetchTableMetaFinished:result:" title="tableOperationFetchTableMetaFinished:result:"></a>
+	<h3 class="subsubtitle method-title">tableOperationFetchTableMetaFinished:result:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>获取表元数据成功</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)tableOperationFetchTableMetaFinished:(OTSTableOperation *)<em>op</em> result:(TableMeta *)<em>result</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>op</em></dt>
+			<dd><p><a href="../Classes/OTSTableOperation.html">OTSTableOperation</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>result</em></dt>
+			<dd><p><a href="../Classes/TableMeta.html">TableMeta</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>获取表元数据成功</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OTSTableOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/tableOperationListTableGroupFailed:error:" title="tableOperationListTableGroupFailed:error:"></a>
+	<h3 class="subsubtitle method-title">tableOperationListTableGroupFailed:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>罗列表组失败</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)tableOperationListTableGroupFailed:(OTSTableOperation *)<em>op</em> error:(OTSError *)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>op</em></dt>
+			<dd><p><a href="../Classes/OTSTableOperation.html">OTSTableOperation</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p><a href="../Classes/OTSError.html">OTSError</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>罗列表组失败</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OTSTableOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/tableOperationListTableGroupFinished:result:" title="tableOperationListTableGroupFinished:result:"></a>
+	<h3 class="subsubtitle method-title">tableOperationListTableGroupFinished:result:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>罗列表组成功</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)tableOperationListTableGroupFinished:(OTSTableOperation *)<em>op</em> result:(ListTableGroupResult *)<em>result</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>op</em></dt>
+			<dd><p><a href="../Classes/OTSTableOperation.html">OTSTableOperation</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>result</em></dt>
+			<dd><p><a href="../Classes/CreateTableGroupResult.html">CreateTableGroupResult</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>罗列表组成功</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OTSTableOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/tableOperationListTablesFailed:error:" title="tableOperationListTablesFailed:error:"></a>
+	<h3 class="subsubtitle method-title">tableOperationListTablesFailed:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>罗列表失败</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)tableOperationListTablesFailed:(OTSTableOperation *)<em>op</em> error:(OTSError *)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>op</em></dt>
+			<dd><p><a href="../Classes/OTSTableOperation.html">OTSTableOperation</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p><a href="../Classes/OTSError.html">OTSError</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>罗列表失败</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OTSTableOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/tableOperationListTablesFinished:result:" title="tableOperationListTablesFinished:result:"></a>
+	<h3 class="subsubtitle method-title">tableOperationListTablesFinished:result:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>罗列表成功</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)tableOperationListTablesFinished:(OTSTableOperation *)<em>op</em> result:(ListTableResult *)<em>result</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>op</em></dt>
+			<dd><p><a href="../Classes/OTSTableOperation.html">OTSTableOperation</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>result</em></dt>
+			<dd><p><a href="../Classes/ListTableResult.html">ListTableResult</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>罗列表成功</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OTSTableOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/tableOperationNetworkError:error:" title="tableOperationNetworkError:error:"></a>
+	<h3 class="subsubtitle method-title">tableOperationNetworkError:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>网络错误响应</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)tableOperationNetworkError:(OTSTableOperation *)<em>op</em> error:(OTSError *)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>op</em></dt>
+			<dd><p><a href="../Classes/OTSTableOperation.html">OTSTableOperation</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p><a href="../Classes/OTSError.html">OTSError</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>网络错误响应</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OTSTableOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2012 igis.me. All rights reserved. (Last updated: 2012-09-01)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 789)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

@@ -1,0 +1,2469 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>OTSClientDelegate Protocol Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.0.5 (build 789)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">AliyunOpenServiceSDK </a></h1>
+				<a id="developerHome" href="../index.html">igis.me</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">OTSClientDelegate Protocol Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/OTSClientAbortTransactionFailed:error:">&nbsp;&nbsp;&nbsp;&nbsp;- OTSClientAbortTransactionFailed:error:</option>
+	
+	<option value="//api/name/OTSClientAbortTransactionFinished:result:">&nbsp;&nbsp;&nbsp;&nbsp;- OTSClientAbortTransactionFinished:result:</option>
+	
+	<option value="//api/name/OTSClientBatchModifyDataFailed:error:">&nbsp;&nbsp;&nbsp;&nbsp;- OTSClientBatchModifyDataFailed:error:</option>
+	
+	<option value="//api/name/OTSClientBatchModifyDataFinished:result:">&nbsp;&nbsp;&nbsp;&nbsp;- OTSClientBatchModifyDataFinished:result:</option>
+	
+	<option value="//api/name/OTSClientCommitTransactionFailed:error:">&nbsp;&nbsp;&nbsp;&nbsp;- OTSClientCommitTransactionFailed:error:</option>
+	
+	<option value="//api/name/OTSClientCommitTransactionFinished:result:">&nbsp;&nbsp;&nbsp;&nbsp;- OTSClientCommitTransactionFinished:result:</option>
+	
+	<option value="//api/name/OTSClientCreateTableFailed:error:">&nbsp;&nbsp;&nbsp;&nbsp;- OTSClientCreateTableFailed:error:</option>
+	
+	<option value="//api/name/OTSClientCreateTableFinished:result:">&nbsp;&nbsp;&nbsp;&nbsp;- OTSClientCreateTableFinished:result:</option>
+	
+	<option value="//api/name/OTSClientCreateTableGroupFailed:error:">&nbsp;&nbsp;&nbsp;&nbsp;- OTSClientCreateTableGroupFailed:error:</option>
+	
+	<option value="//api/name/OTSClientCreateTableGroupFinished:result:">&nbsp;&nbsp;&nbsp;&nbsp;- OTSClientCreateTableGroupFinished:result:</option>
+	
+	<option value="//api/name/OTSClientDeleteDataFailed:error:">&nbsp;&nbsp;&nbsp;&nbsp;- OTSClientDeleteDataFailed:error:</option>
+	
+	<option value="//api/name/OTSClientDeleteDataFinished:result:">&nbsp;&nbsp;&nbsp;&nbsp;- OTSClientDeleteDataFinished:result:</option>
+	
+	<option value="//api/name/OTSClientDeleteTableFailed:error:">&nbsp;&nbsp;&nbsp;&nbsp;- OTSClientDeleteTableFailed:error:</option>
+	
+	<option value="//api/name/OTSClientDeleteTableFinished:result:">&nbsp;&nbsp;&nbsp;&nbsp;- OTSClientDeleteTableFinished:result:</option>
+	
+	<option value="//api/name/OTSClientDeleteTableGroupFailed:error:">&nbsp;&nbsp;&nbsp;&nbsp;- OTSClientDeleteTableGroupFailed:error:</option>
+	
+	<option value="//api/name/OTSClientDeleteTableGroupFinished:result:">&nbsp;&nbsp;&nbsp;&nbsp;- OTSClientDeleteTableGroupFinished:result:</option>
+	
+	<option value="//api/name/OTSClientFetchRowFailed:error:">&nbsp;&nbsp;&nbsp;&nbsp;- OTSClientFetchRowFailed:error:</option>
+	
+	<option value="//api/name/OTSClientFetchRowFinished:result:">&nbsp;&nbsp;&nbsp;&nbsp;- OTSClientFetchRowFinished:result:</option>
+	
+	<option value="//api/name/OTSClientFetchRowsByOffsetFailed:error:">&nbsp;&nbsp;&nbsp;&nbsp;- OTSClientFetchRowsByOffsetFailed:error:</option>
+	
+	<option value="//api/name/OTSClientFetchRowsByOffsetFinished:result:">&nbsp;&nbsp;&nbsp;&nbsp;- OTSClientFetchRowsByOffsetFinished:result:</option>
+	
+	<option value="//api/name/OTSClientFetchRowsByRangeFailed:error:">&nbsp;&nbsp;&nbsp;&nbsp;- OTSClientFetchRowsByRangeFailed:error:</option>
+	
+	<option value="//api/name/OTSClientFetchRowsByRangeFinished:result:">&nbsp;&nbsp;&nbsp;&nbsp;- OTSClientFetchRowsByRangeFinished:result:</option>
+	
+	<option value="//api/name/OTSClientFetchTableMetaFailed:error:">&nbsp;&nbsp;&nbsp;&nbsp;- OTSClientFetchTableMetaFailed:error:</option>
+	
+	<option value="//api/name/OTSClientFetchTableMetaFinished:result:">&nbsp;&nbsp;&nbsp;&nbsp;- OTSClientFetchTableMetaFinished:result:</option>
+	
+	<option value="//api/name/OTSClientListTableGroupFailed:error:">&nbsp;&nbsp;&nbsp;&nbsp;- OTSClientListTableGroupFailed:error:</option>
+	
+	<option value="//api/name/OTSClientListTableGroupFinished:result:">&nbsp;&nbsp;&nbsp;&nbsp;- OTSClientListTableGroupFinished:result:</option>
+	
+	<option value="//api/name/OTSClientListTablesFailed:error:">&nbsp;&nbsp;&nbsp;&nbsp;- OTSClientListTablesFailed:error:</option>
+	
+	<option value="//api/name/OTSClientListTablesFinished:result:">&nbsp;&nbsp;&nbsp;&nbsp;- OTSClientListTablesFinished:result:</option>
+	
+	<option value="//api/name/OTSClientNetworkError:error:">&nbsp;&nbsp;&nbsp;&nbsp;- OTSClientNetworkError:error:</option>
+	
+	<option value="//api/name/OTSClientPutDataFailed:error:">&nbsp;&nbsp;&nbsp;&nbsp;- OTSClientPutDataFailed:error:</option>
+	
+	<option value="//api/name/OTSClientPutDataFinished:result:">&nbsp;&nbsp;&nbsp;&nbsp;- OTSClientPutDataFinished:result:</option>
+	
+	<option value="//api/name/OTSClientStartTransactionFailed:error:">&nbsp;&nbsp;&nbsp;&nbsp;- OTSClientStartTransactionFailed:error:</option>
+	
+	<option value="//api/name/OTSClientStartTransactionFinished:result:">&nbsp;&nbsp;&nbsp;&nbsp;- OTSClientStartTransactionFinished:result:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/OTSClientAbortTransactionFailed:error:">OTSClientAbortTransactionFailed:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/OTSClientAbortTransactionFinished:result:">OTSClientAbortTransactionFinished:result:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/OTSClientBatchModifyDataFailed:error:">OTSClientBatchModifyDataFailed:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/OTSClientBatchModifyDataFinished:result:">OTSClientBatchModifyDataFinished:result:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/OTSClientCommitTransactionFailed:error:">OTSClientCommitTransactionFailed:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/OTSClientCommitTransactionFinished:result:">OTSClientCommitTransactionFinished:result:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/OTSClientCreateTableFailed:error:">OTSClientCreateTableFailed:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/OTSClientCreateTableFinished:result:">OTSClientCreateTableFinished:result:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/OTSClientCreateTableGroupFailed:error:">OTSClientCreateTableGroupFailed:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/OTSClientCreateTableGroupFinished:result:">OTSClientCreateTableGroupFinished:result:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/OTSClientDeleteDataFailed:error:">OTSClientDeleteDataFailed:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/OTSClientDeleteDataFinished:result:">OTSClientDeleteDataFinished:result:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/OTSClientDeleteTableFailed:error:">OTSClientDeleteTableFailed:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/OTSClientDeleteTableFinished:result:">OTSClientDeleteTableFinished:result:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/OTSClientDeleteTableGroupFailed:error:">OTSClientDeleteTableGroupFailed:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/OTSClientDeleteTableGroupFinished:result:">OTSClientDeleteTableGroupFinished:result:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/OTSClientFetchRowFailed:error:">OTSClientFetchRowFailed:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/OTSClientFetchRowFinished:result:">OTSClientFetchRowFinished:result:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/OTSClientFetchRowsByOffsetFailed:error:">OTSClientFetchRowsByOffsetFailed:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/OTSClientFetchRowsByOffsetFinished:result:">OTSClientFetchRowsByOffsetFinished:result:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/OTSClientFetchRowsByRangeFailed:error:">OTSClientFetchRowsByRangeFailed:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/OTSClientFetchRowsByRangeFinished:result:">OTSClientFetchRowsByRangeFinished:result:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/OTSClientFetchTableMetaFailed:error:">OTSClientFetchTableMetaFailed:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/OTSClientFetchTableMetaFinished:result:">OTSClientFetchTableMetaFinished:result:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/OTSClientListTableGroupFailed:error:">OTSClientListTableGroupFailed:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/OTSClientListTableGroupFinished:result:">OTSClientListTableGroupFinished:result:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/OTSClientListTablesFailed:error:">OTSClientListTablesFailed:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/OTSClientListTablesFinished:result:">OTSClientListTablesFinished:result:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/OTSClientNetworkError:error:">OTSClientNetworkError:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/OTSClientPutDataFailed:error:">OTSClientPutDataFailed:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/OTSClientPutDataFinished:result:">OTSClientPutDataFinished:result:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/OTSClientStartTransactionFailed:error:">OTSClientStartTransactionFailed:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/OTSClientStartTransactionFinished:result:">OTSClientStartTransactionFinished:result:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="OTSClientDelegate Protocol Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">OTSClientDelegate Protocol Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">OTSClient.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p><a href="OTSClientDelegate.html">OTSClientDelegate</a></p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/OTSClientNetworkError:error:">&ndash;&nbsp;OTSClientNetworkError:error:</a></code>
+		<span class="tooltip"><p>网络错误响应</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/OTSClientCreateTableFinished:result:">&ndash;&nbsp;OTSClientCreateTableFinished:result:</a></code>
+		<span class="tooltip"><p>创建表成功</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/OTSClientCreateTableFailed:error:">&ndash;&nbsp;OTSClientCreateTableFailed:error:</a></code>
+		<span class="tooltip"><p>创建表失败</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/OTSClientListTablesFinished:result:">&ndash;&nbsp;OTSClientListTablesFinished:result:</a></code>
+		<span class="tooltip"><p>罗列表成功</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/OTSClientListTablesFailed:error:">&ndash;&nbsp;OTSClientListTablesFailed:error:</a></code>
+		<span class="tooltip"><p>罗列表失败</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/OTSClientDeleteTableFinished:result:">&ndash;&nbsp;OTSClientDeleteTableFinished:result:</a></code>
+		<span class="tooltip"><p>删除表成功</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/OTSClientDeleteTableFailed:error:">&ndash;&nbsp;OTSClientDeleteTableFailed:error:</a></code>
+		<span class="tooltip"><p>删除表失败</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/OTSClientFetchTableMetaFinished:result:">&ndash;&nbsp;OTSClientFetchTableMetaFinished:result:</a></code>
+		<span class="tooltip"><p>获取表元数据成功</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/OTSClientFetchTableMetaFailed:error:">&ndash;&nbsp;OTSClientFetchTableMetaFailed:error:</a></code>
+		<span class="tooltip"><p>获取表元数据失败</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/OTSClientCreateTableGroupFinished:result:">&ndash;&nbsp;OTSClientCreateTableGroupFinished:result:</a></code>
+		<span class="tooltip"><p>创建表组成功</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/OTSClientCreateTableGroupFailed:error:">&ndash;&nbsp;OTSClientCreateTableGroupFailed:error:</a></code>
+		<span class="tooltip"><p>创建表组失败</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/OTSClientListTableGroupFinished:result:">&ndash;&nbsp;OTSClientListTableGroupFinished:result:</a></code>
+		<span class="tooltip"><p>罗列表组成功</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/OTSClientListTableGroupFailed:error:">&ndash;&nbsp;OTSClientListTableGroupFailed:error:</a></code>
+		<span class="tooltip"><p>罗列表组失败</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/OTSClientDeleteTableGroupFinished:result:">&ndash;&nbsp;OTSClientDeleteTableGroupFinished:result:</a></code>
+		<span class="tooltip"><p>删除表组成功</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/OTSClientDeleteTableGroupFailed:error:">&ndash;&nbsp;OTSClientDeleteTableGroupFailed:error:</a></code>
+		<span class="tooltip"><p>删除表组失败</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/OTSClientStartTransactionFinished:result:">&ndash;&nbsp;OTSClientStartTransactionFinished:result:</a></code>
+		<span class="tooltip"><p>开始事务成功</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/OTSClientStartTransactionFailed:error:">&ndash;&nbsp;OTSClientStartTransactionFailed:error:</a></code>
+		<span class="tooltip"><p>开始事务失败</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/OTSClientCommitTransactionFinished:result:">&ndash;&nbsp;OTSClientCommitTransactionFinished:result:</a></code>
+		<span class="tooltip"><p>提交事务成功</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/OTSClientCommitTransactionFailed:error:">&ndash;&nbsp;OTSClientCommitTransactionFailed:error:</a></code>
+		<span class="tooltip"><p>提交事务失败</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/OTSClientAbortTransactionFinished:result:">&ndash;&nbsp;OTSClientAbortTransactionFinished:result:</a></code>
+		<span class="tooltip"><p>中断事务成功</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/OTSClientAbortTransactionFailed:error:">&ndash;&nbsp;OTSClientAbortTransactionFailed:error:</a></code>
+		<span class="tooltip"><p>中断事务失败</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/OTSClientFetchRowFinished:result:">&ndash;&nbsp;OTSClientFetchRowFinished:result:</a></code>
+		<span class="tooltip"><p>获取Row成功</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/OTSClientFetchRowFailed:error:">&ndash;&nbsp;OTSClientFetchRowFailed:error:</a></code>
+		<span class="tooltip"><p>获取Row失败</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/OTSClientFetchRowsByOffsetFinished:result:">&ndash;&nbsp;OTSClientFetchRowsByOffsetFinished:result:</a></code>
+		<span class="tooltip"><p>通过offset获取Row成功</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/OTSClientFetchRowsByOffsetFailed:error:">&ndash;&nbsp;OTSClientFetchRowsByOffsetFailed:error:</a></code>
+		<span class="tooltip"><p>通过offset获取Row失败</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/OTSClientFetchRowsByRangeFinished:result:">&ndash;&nbsp;OTSClientFetchRowsByRangeFinished:result:</a></code>
+		<span class="tooltip"><p>通过rang获取Row成功</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/OTSClientFetchRowsByRangeFailed:error:">&ndash;&nbsp;OTSClientFetchRowsByRangeFailed:error:</a></code>
+		<span class="tooltip"><p>通过rang获取Row失败</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/OTSClientPutDataFinished:result:">&ndash;&nbsp;OTSClientPutDataFinished:result:</a></code>
+		<span class="tooltip"><p>写表数据成功</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/OTSClientPutDataFailed:error:">&ndash;&nbsp;OTSClientPutDataFailed:error:</a></code>
+		<span class="tooltip"><p>写表数据失败</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/OTSClientDeleteDataFinished:result:">&ndash;&nbsp;OTSClientDeleteDataFinished:result:</a></code>
+		<span class="tooltip"><p>删除表数据成功</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/OTSClientDeleteDataFailed:error:">&ndash;&nbsp;OTSClientDeleteDataFailed:error:</a></code>
+		<span class="tooltip"><p>删除表数据失败</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/OTSClientBatchModifyDataFinished:result:">&ndash;&nbsp;OTSClientBatchModifyDataFinished:result:</a></code>
+		<span class="tooltip"><p>批量修改表数据成功</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/OTSClientBatchModifyDataFailed:error:">&ndash;&nbsp;OTSClientBatchModifyDataFailed:error:</a></code>
+		<span class="tooltip"><p>批量修改表数据失败</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/OTSClientAbortTransactionFailed:error:" title="OTSClientAbortTransactionFailed:error:"></a>
+	<h3 class="subsubtitle method-title">OTSClientAbortTransactionFailed:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>中断事务失败</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)OTSClientAbortTransactionFailed:(OTSClient *)<em>client</em> error:(OTSError *)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>client</em></dt>
+			<dd><p><a href="../Classes/OTSClient.html">OTSClient</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p><a href="../Classes/OTSError.html">OTSError</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>中断事务失败</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OTSClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/OTSClientAbortTransactionFinished:result:" title="OTSClientAbortTransactionFinished:result:"></a>
+	<h3 class="subsubtitle method-title">OTSClientAbortTransactionFinished:result:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>中断事务成功</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)OTSClientAbortTransactionFinished:(OTSClient *)<em>client</em> result:(NSString *)<em>result</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>client</em></dt>
+			<dd><p><a href="../Classes/OTSClient.html">OTSClient</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>result</em></dt>
+			<dd><p><a href="../Classes/CreateTableResult.html">CreateTableResult</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>中断事务成功</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OTSClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/OTSClientBatchModifyDataFailed:error:" title="OTSClientBatchModifyDataFailed:error:"></a>
+	<h3 class="subsubtitle method-title">OTSClientBatchModifyDataFailed:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>批量修改表数据失败</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)OTSClientBatchModifyDataFailed:(OTSClient *)<em>client</em> error:(OTSError *)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>client</em></dt>
+			<dd><p><a href="../Classes/OTSClient.html">OTSClient</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p><a href="../Classes/OTSError.html">OTSError</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>批量修改表数据失败</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OTSClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/OTSClientBatchModifyDataFinished:result:" title="OTSClientBatchModifyDataFinished:result:"></a>
+	<h3 class="subsubtitle method-title">OTSClientBatchModifyDataFinished:result:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>批量修改表数据成功</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)OTSClientBatchModifyDataFinished:(OTSClient *)<em>client</em> result:(NSString *)<em>result</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>client</em></dt>
+			<dd><p><a href="../Classes/OTSClient.html">OTSClient</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>result</em></dt>
+			<dd><p><a href="../Classes/CreateTableResult.html">CreateTableResult</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>批量修改表数据成功</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OTSClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/OTSClientCommitTransactionFailed:error:" title="OTSClientCommitTransactionFailed:error:"></a>
+	<h3 class="subsubtitle method-title">OTSClientCommitTransactionFailed:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>提交事务失败</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)OTSClientCommitTransactionFailed:(OTSClient *)<em>client</em> error:(OTSError *)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>client</em></dt>
+			<dd><p><a href="../Classes/OTSClient.html">OTSClient</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p><a href="../Classes/OTSError.html">OTSError</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>提交事务失败</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OTSClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/OTSClientCommitTransactionFinished:result:" title="OTSClientCommitTransactionFinished:result:"></a>
+	<h3 class="subsubtitle method-title">OTSClientCommitTransactionFinished:result:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>提交事务成功</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)OTSClientCommitTransactionFinished:(OTSClient *)<em>client</em> result:(NSString *)<em>result</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>client</em></dt>
+			<dd><p><a href="../Classes/OTSClient.html">OTSClient</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>result</em></dt>
+			<dd><p><a href="../Classes/CreateTableResult.html">CreateTableResult</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>提交事务成功</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OTSClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/OTSClientCreateTableFailed:error:" title="OTSClientCreateTableFailed:error:"></a>
+	<h3 class="subsubtitle method-title">OTSClientCreateTableFailed:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>创建表失败</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)OTSClientCreateTableFailed:(OTSClient *)<em>client</em> error:(OTSError *)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>client</em></dt>
+			<dd><p><a href="../Classes/OTSClient.html">OTSClient</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p><a href="../Classes/OTSError.html">OTSError</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>创建表失败</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OTSClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/OTSClientCreateTableFinished:result:" title="OTSClientCreateTableFinished:result:"></a>
+	<h3 class="subsubtitle method-title">OTSClientCreateTableFinished:result:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>创建表成功</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)OTSClientCreateTableFinished:(OTSClient *)<em>client</em> result:(CreateTableResult *)<em>result</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>client</em></dt>
+			<dd><p><a href="../Classes/OTSClient.html">OTSClient</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>result</em></dt>
+			<dd><p><a href="../Classes/CreateTableResult.html">CreateTableResult</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>创建表成功</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OTSClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/OTSClientCreateTableGroupFailed:error:" title="OTSClientCreateTableGroupFailed:error:"></a>
+	<h3 class="subsubtitle method-title">OTSClientCreateTableGroupFailed:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>创建表组失败</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)OTSClientCreateTableGroupFailed:(OTSClient *)<em>client</em> error:(OTSError *)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>client</em></dt>
+			<dd><p><a href="../Classes/OTSClient.html">OTSClient</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p><a href="../Classes/OTSError.html">OTSError</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>创建表组失败</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OTSClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/OTSClientCreateTableGroupFinished:result:" title="OTSClientCreateTableGroupFinished:result:"></a>
+	<h3 class="subsubtitle method-title">OTSClientCreateTableGroupFinished:result:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>创建表组成功</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)OTSClientCreateTableGroupFinished:(OTSClient *)<em>client</em> result:(CreateTableGroupResult *)<em>result</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>client</em></dt>
+			<dd><p><a href="../Classes/OTSClient.html">OTSClient</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>result</em></dt>
+			<dd><p><a href="../Classes/CreateTableResult.html">CreateTableResult</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>创建表组成功</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OTSClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/OTSClientDeleteDataFailed:error:" title="OTSClientDeleteDataFailed:error:"></a>
+	<h3 class="subsubtitle method-title">OTSClientDeleteDataFailed:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>删除表数据失败</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)OTSClientDeleteDataFailed:(OTSClient *)<em>client</em> error:(OTSError *)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>client</em></dt>
+			<dd><p><a href="../Classes/OTSClient.html">OTSClient</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p><a href="../Classes/OTSError.html">OTSError</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>删除表数据失败</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OTSClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/OTSClientDeleteDataFinished:result:" title="OTSClientDeleteDataFinished:result:"></a>
+	<h3 class="subsubtitle method-title">OTSClientDeleteDataFinished:result:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>删除表数据成功</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)OTSClientDeleteDataFinished:(OTSClient *)<em>client</em> result:(NSString *)<em>result</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>client</em></dt>
+			<dd><p><a href="../Classes/OTSClient.html">OTSClient</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>result</em></dt>
+			<dd><p><a href="../Classes/CreateTableResult.html">CreateTableResult</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>删除表数据成功</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OTSClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/OTSClientDeleteTableFailed:error:" title="OTSClientDeleteTableFailed:error:"></a>
+	<h3 class="subsubtitle method-title">OTSClientDeleteTableFailed:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>删除表失败</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)OTSClientDeleteTableFailed:(OTSClient *)<em>client</em> error:(OTSError *)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>client</em></dt>
+			<dd><p><a href="../Classes/OTSClient.html">OTSClient</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p><a href="../Classes/OTSError.html">OTSError</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>删除表失败</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OTSClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/OTSClientDeleteTableFinished:result:" title="OTSClientDeleteTableFinished:result:"></a>
+	<h3 class="subsubtitle method-title">OTSClientDeleteTableFinished:result:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>删除表成功</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)OTSClientDeleteTableFinished:(OTSClient *)<em>client</em> result:(NSString *)<em>result</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>client</em></dt>
+			<dd><p><a href="../Classes/OTSClient.html">OTSClient</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>result</em></dt>
+			<dd><p><a href="../Classes/CreateTableResult.html">CreateTableResult</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>删除表成功</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OTSClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/OTSClientDeleteTableGroupFailed:error:" title="OTSClientDeleteTableGroupFailed:error:"></a>
+	<h3 class="subsubtitle method-title">OTSClientDeleteTableGroupFailed:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>删除表组失败</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)OTSClientDeleteTableGroupFailed:(OTSClient *)<em>client</em> error:(OTSError *)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>client</em></dt>
+			<dd><p><a href="../Classes/OTSClient.html">OTSClient</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p><a href="../Classes/OTSError.html">OTSError</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>删除表组失败</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OTSClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/OTSClientDeleteTableGroupFinished:result:" title="OTSClientDeleteTableGroupFinished:result:"></a>
+	<h3 class="subsubtitle method-title">OTSClientDeleteTableGroupFinished:result:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>删除表组成功</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)OTSClientDeleteTableGroupFinished:(OTSClient *)<em>client</em> result:(NSString *)<em>result</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>client</em></dt>
+			<dd><p><a href="../Classes/OTSClient.html">OTSClient</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>result</em></dt>
+			<dd><p><a href="../Classes/CreateTableResult.html">CreateTableResult</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>删除表组成功</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OTSClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/OTSClientFetchRowFailed:error:" title="OTSClientFetchRowFailed:error:"></a>
+	<h3 class="subsubtitle method-title">OTSClientFetchRowFailed:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>获取Row失败</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)OTSClientFetchRowFailed:(OTSClient *)<em>client</em> error:(OTSError *)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>client</em></dt>
+			<dd><p><a href="../Classes/OTSClient.html">OTSClient</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p><a href="../Classes/OTSError.html">OTSError</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>获取Row失败</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OTSClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/OTSClientFetchRowFinished:result:" title="OTSClientFetchRowFinished:result:"></a>
+	<h3 class="subsubtitle method-title">OTSClientFetchRowFinished:result:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>获取Row成功</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)OTSClientFetchRowFinished:(OTSClient *)<em>client</em> result:(Row *)<em>result</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>client</em></dt>
+			<dd><p><a href="../Classes/OTSClient.html">OTSClient</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>result</em></dt>
+			<dd><p><a href="../Classes/CreateTableResult.html">CreateTableResult</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>获取Row成功</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OTSClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/OTSClientFetchRowsByOffsetFailed:error:" title="OTSClientFetchRowsByOffsetFailed:error:"></a>
+	<h3 class="subsubtitle method-title">OTSClientFetchRowsByOffsetFailed:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>通过offset获取Row失败</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)OTSClientFetchRowsByOffsetFailed:(OTSClient *)<em>client</em> error:(OTSError *)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>client</em></dt>
+			<dd><p><a href="../Classes/OTSClient.html">OTSClient</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p><a href="../Classes/OTSError.html">OTSError</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>通过offset获取Row失败</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OTSClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/OTSClientFetchRowsByOffsetFinished:result:" title="OTSClientFetchRowsByOffsetFinished:result:"></a>
+	<h3 class="subsubtitle method-title">OTSClientFetchRowsByOffsetFinished:result:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>通过offset获取Row成功</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)OTSClientFetchRowsByOffsetFinished:(OTSClient *)<em>client</em> result:(NSArray *)<em>result</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>client</em></dt>
+			<dd><p><a href="../Classes/OTSClient.html">OTSClient</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>result</em></dt>
+			<dd><p><a href="../Classes/CreateTableResult.html">CreateTableResult</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>通过offset获取Row成功</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OTSClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/OTSClientFetchRowsByRangeFailed:error:" title="OTSClientFetchRowsByRangeFailed:error:"></a>
+	<h3 class="subsubtitle method-title">OTSClientFetchRowsByRangeFailed:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>通过rang获取Row失败</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)OTSClientFetchRowsByRangeFailed:(OTSClient *)<em>client</em> error:(OTSError *)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>client</em></dt>
+			<dd><p><a href="../Classes/OTSClient.html">OTSClient</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p><a href="../Classes/OTSError.html">OTSError</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>通过rang获取Row失败</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OTSClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/OTSClientFetchRowsByRangeFinished:result:" title="OTSClientFetchRowsByRangeFinished:result:"></a>
+	<h3 class="subsubtitle method-title">OTSClientFetchRowsByRangeFinished:result:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>通过rang获取Row成功</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)OTSClientFetchRowsByRangeFinished:(OTSClient *)<em>client</em> result:(NSArray *)<em>result</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>client</em></dt>
+			<dd><p><a href="../Classes/OTSClient.html">OTSClient</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>result</em></dt>
+			<dd><p><a href="../Classes/CreateTableResult.html">CreateTableResult</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>通过rang获取Row成功</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OTSClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/OTSClientFetchTableMetaFailed:error:" title="OTSClientFetchTableMetaFailed:error:"></a>
+	<h3 class="subsubtitle method-title">OTSClientFetchTableMetaFailed:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>获取表元数据失败</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)OTSClientFetchTableMetaFailed:(OTSClient *)<em>client</em> error:(OTSError *)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>client</em></dt>
+			<dd><p><a href="../Classes/OTSClient.html">OTSClient</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p><a href="../Classes/OTSError.html">OTSError</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>获取表元数据失败</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OTSClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/OTSClientFetchTableMetaFinished:result:" title="OTSClientFetchTableMetaFinished:result:"></a>
+	<h3 class="subsubtitle method-title">OTSClientFetchTableMetaFinished:result:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>获取表元数据成功</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)OTSClientFetchTableMetaFinished:(OTSClient *)<em>client</em> result:(TableMeta *)<em>result</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>client</em></dt>
+			<dd><p><a href="../Classes/OTSClient.html">OTSClient</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>result</em></dt>
+			<dd><p><a href="../Classes/CreateTableResult.html">CreateTableResult</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>获取表元数据成功</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OTSClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/OTSClientListTableGroupFailed:error:" title="OTSClientListTableGroupFailed:error:"></a>
+	<h3 class="subsubtitle method-title">OTSClientListTableGroupFailed:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>罗列表组失败</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)OTSClientListTableGroupFailed:(OTSClient *)<em>client</em> error:(OTSError *)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>client</em></dt>
+			<dd><p><a href="../Classes/OTSClient.html">OTSClient</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p><a href="../Classes/OTSError.html">OTSError</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>罗列表组失败</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OTSClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/OTSClientListTableGroupFinished:result:" title="OTSClientListTableGroupFinished:result:"></a>
+	<h3 class="subsubtitle method-title">OTSClientListTableGroupFinished:result:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>罗列表组成功</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)OTSClientListTableGroupFinished:(OTSClient *)<em>client</em> result:(ListTableGroupResult *)<em>result</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>client</em></dt>
+			<dd><p><a href="../Classes/OTSClient.html">OTSClient</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>result</em></dt>
+			<dd><p><a href="../Classes/CreateTableResult.html">CreateTableResult</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>罗列表组成功</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OTSClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/OTSClientListTablesFailed:error:" title="OTSClientListTablesFailed:error:"></a>
+	<h3 class="subsubtitle method-title">OTSClientListTablesFailed:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>罗列表失败</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)OTSClientListTablesFailed:(OTSClient *)<em>client</em> error:(OTSError *)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>client</em></dt>
+			<dd><p><a href="../Classes/OTSClient.html">OTSClient</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p><a href="../Classes/OTSError.html">OTSError</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>罗列表失败</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OTSClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/OTSClientListTablesFinished:result:" title="OTSClientListTablesFinished:result:"></a>
+	<h3 class="subsubtitle method-title">OTSClientListTablesFinished:result:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>罗列表成功</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)OTSClientListTablesFinished:(OTSClient *)<em>client</em> result:(ListTableResult *)<em>result</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>client</em></dt>
+			<dd><p><a href="../Classes/OTSClient.html">OTSClient</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>result</em></dt>
+			<dd><p><a href="../Classes/CreateTableResult.html">CreateTableResult</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>罗列表成功</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OTSClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/OTSClientNetworkError:error:" title="OTSClientNetworkError:error:"></a>
+	<h3 class="subsubtitle method-title">OTSClientNetworkError:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>网络错误响应</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)OTSClientNetworkError:(OTSClient *)<em>client</em> error:(OTSError *)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>client</em></dt>
+			<dd><p><a href="../Classes/OTSClient.html">OTSClient</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p><a href="../Classes/OTSError.html">OTSError</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>网络错误响应</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OTSClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/OTSClientPutDataFailed:error:" title="OTSClientPutDataFailed:error:"></a>
+	<h3 class="subsubtitle method-title">OTSClientPutDataFailed:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>写表数据失败</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)OTSClientPutDataFailed:(OTSClient *)<em>client</em> error:(OTSError *)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>client</em></dt>
+			<dd><p><a href="../Classes/OTSClient.html">OTSClient</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p><a href="../Classes/OTSError.html">OTSError</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>写表数据失败</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OTSClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/OTSClientPutDataFinished:result:" title="OTSClientPutDataFinished:result:"></a>
+	<h3 class="subsubtitle method-title">OTSClientPutDataFinished:result:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>写表数据成功</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)OTSClientPutDataFinished:(OTSClient *)<em>client</em> result:(NSString *)<em>result</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>client</em></dt>
+			<dd><p><a href="../Classes/OTSClient.html">OTSClient</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>result</em></dt>
+			<dd><p><a href="../Classes/CreateTableResult.html">CreateTableResult</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>写表数据成功</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OTSClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/OTSClientStartTransactionFailed:error:" title="OTSClientStartTransactionFailed:error:"></a>
+	<h3 class="subsubtitle method-title">OTSClientStartTransactionFailed:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>开始事务失败</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)OTSClientStartTransactionFailed:(OTSClient *)<em>client</em> error:(OTSError *)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>client</em></dt>
+			<dd><p><a href="../Classes/OTSClient.html">OTSClient</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p><a href="../Classes/OTSError.html">OTSError</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>开始事务失败</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OTSClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/OTSClientStartTransactionFinished:result:" title="OTSClientStartTransactionFinished:result:"></a>
+	<h3 class="subsubtitle method-title">OTSClientStartTransactionFinished:result:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>开始事务成功</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)OTSClientStartTransactionFinished:(OTSClient *)<em>client</em> result:(NSString *)<em>result</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>client</em></dt>
+			<dd><p><a href="../Classes/OTSClient.html">OTSClient</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>result</em></dt>
+			<dd><p><a href="../Classes/CreateTableResult.html">CreateTableResult</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>开始事务成功</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OTSClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2012 igis.me. All rights reserved. (Last updated: 2012-09-01)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 789)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

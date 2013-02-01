@@ -1,0 +1,1129 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>OSSMultipartOperationDelegate Protocol Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.0.5 (build 789)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">AliyunOpenServiceSDK </a></h1>
+				<a id="developerHome" href="../index.html">igis.me</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">OSSMultipartOperationDelegate Protocol Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/OSSMultipartOperationAbortMultipartUploadFailed:error:">&nbsp;&nbsp;&nbsp;&nbsp;- OSSMultipartOperationAbortMultipartUploadFailed:error:</option>
+	
+	<option value="//api/name/OSSMultipartOperationAbortMultipartUploadFinished:result:">&nbsp;&nbsp;&nbsp;&nbsp;- OSSMultipartOperationAbortMultipartUploadFinished:result:</option>
+	
+	<option value="//api/name/OSSMultipartOperationCompleteMultipartUploadFailed:error:">&nbsp;&nbsp;&nbsp;&nbsp;- OSSMultipartOperationCompleteMultipartUploadFailed:error:</option>
+	
+	<option value="//api/name/OSSMultipartOperationCompleteMultipartUploadFinished:result:">&nbsp;&nbsp;&nbsp;&nbsp;- OSSMultipartOperationCompleteMultipartUploadFinished:result:</option>
+	
+	<option value="//api/name/OSSMultipartOperationInitiateMultipartUploadFailed:error:">&nbsp;&nbsp;&nbsp;&nbsp;- OSSMultipartOperationInitiateMultipartUploadFailed:error:</option>
+	
+	<option value="//api/name/OSSMultipartOperationInitiateMultipartUploadFinished:result:">&nbsp;&nbsp;&nbsp;&nbsp;- OSSMultipartOperationInitiateMultipartUploadFinished:result:</option>
+	
+	<option value="//api/name/OSSMultipartOperationListMultipartUploadsFailed:error:">&nbsp;&nbsp;&nbsp;&nbsp;- OSSMultipartOperationListMultipartUploadsFailed:error:</option>
+	
+	<option value="//api/name/OSSMultipartOperationListMultipartUploadsFinished:result:">&nbsp;&nbsp;&nbsp;&nbsp;- OSSMultipartOperationListMultipartUploadsFinished:result:</option>
+	
+	<option value="//api/name/OSSMultipartOperationListPartsFailed:error:">&nbsp;&nbsp;&nbsp;&nbsp;- OSSMultipartOperationListPartsFailed:error:</option>
+	
+	<option value="//api/name/OSSMultipartOperationListPartsFinished:result:">&nbsp;&nbsp;&nbsp;&nbsp;- OSSMultipartOperationListPartsFinished:result:</option>
+	
+	<option value="//api/name/OSSMultipartOperationNetWorkFailed:error:">&nbsp;&nbsp;&nbsp;&nbsp;- OSSMultipartOperationNetWorkFailed:error:</option>
+	
+	<option value="//api/name/OSSMultipartOperationUploadPartFailed:error:">&nbsp;&nbsp;&nbsp;&nbsp;- OSSMultipartOperationUploadPartFailed:error:</option>
+	
+	<option value="//api/name/OSSMultipartOperationUploadPartFinished:result:">&nbsp;&nbsp;&nbsp;&nbsp;- OSSMultipartOperationUploadPartFinished:result:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/OSSMultipartOperationAbortMultipartUploadFailed:error:">OSSMultipartOperationAbortMultipartUploadFailed:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/OSSMultipartOperationAbortMultipartUploadFinished:result:">OSSMultipartOperationAbortMultipartUploadFinished:result:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/OSSMultipartOperationCompleteMultipartUploadFailed:error:">OSSMultipartOperationCompleteMultipartUploadFailed:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/OSSMultipartOperationCompleteMultipartUploadFinished:result:">OSSMultipartOperationCompleteMultipartUploadFinished:result:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/OSSMultipartOperationInitiateMultipartUploadFailed:error:">OSSMultipartOperationInitiateMultipartUploadFailed:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/OSSMultipartOperationInitiateMultipartUploadFinished:result:">OSSMultipartOperationInitiateMultipartUploadFinished:result:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/OSSMultipartOperationListMultipartUploadsFailed:error:">OSSMultipartOperationListMultipartUploadsFailed:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/OSSMultipartOperationListMultipartUploadsFinished:result:">OSSMultipartOperationListMultipartUploadsFinished:result:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/OSSMultipartOperationListPartsFailed:error:">OSSMultipartOperationListPartsFailed:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/OSSMultipartOperationListPartsFinished:result:">OSSMultipartOperationListPartsFinished:result:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/OSSMultipartOperationNetWorkFailed:error:">OSSMultipartOperationNetWorkFailed:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/OSSMultipartOperationUploadPartFailed:error:">OSSMultipartOperationUploadPartFailed:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/OSSMultipartOperationUploadPartFinished:result:">OSSMultipartOperationUploadPartFinished:result:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="OSSMultipartOperationDelegate Protocol Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">OSSMultipartOperationDelegate Protocol Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">OSSMultipartOperation.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p><a href="OSSMultipartOperationDelegate.html">OSSMultipartOperationDelegate</a> 协议，声明OSSMultipartOperation相关方法</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/OSSMultipartOperationNetWorkFailed:error:">&ndash;&nbsp;OSSMultipartOperationNetWorkFailed:error:</a></code>
+		<span class="tooltip"><p>network 失败</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/OSSMultipartOperationAbortMultipartUploadFinished:result:">&ndash;&nbsp;OSSMultipartOperationAbortMultipartUploadFinished:result:</a></code>
+		<span class="tooltip"><p>Abort<a href="../Classes/MultipartUpload.html">MultipartUpload</a> 成功</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/OSSMultipartOperationAbortMultipartUploadFailed:error:">&ndash;&nbsp;OSSMultipartOperationAbortMultipartUploadFailed:error:</a></code>
+		<span class="tooltip"><p>Abort<a href="../Classes/MultipartUpload.html">MultipartUpload</a> 失败</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/OSSMultipartOperationCompleteMultipartUploadFinished:result:">&ndash;&nbsp;OSSMultipartOperationCompleteMultipartUploadFinished:result:</a></code>
+		<span class="tooltip"><p>Complete<a href="../Classes/MultipartUpload.html">MultipartUpload</a> 成功</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/OSSMultipartOperationCompleteMultipartUploadFailed:error:">&ndash;&nbsp;OSSMultipartOperationCompleteMultipartUploadFailed:error:</a></code>
+		<span class="tooltip"><p>Complete<a href="../Classes/MultipartUpload.html">MultipartUpload</a> 失败</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/OSSMultipartOperationInitiateMultipartUploadFinished:result:">&ndash;&nbsp;OSSMultipartOperationInitiateMultipartUploadFinished:result:</a></code>
+		<span class="tooltip"><p>Initiate<a href="../Classes/MultipartUpload.html">MultipartUpload</a> 成功</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/OSSMultipartOperationInitiateMultipartUploadFailed:error:">&ndash;&nbsp;OSSMultipartOperationInitiateMultipartUploadFailed:error:</a></code>
+		<span class="tooltip"><p>Initiate<a href="../Classes/MultipartUpload.html">MultipartUpload</a> 失败</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/OSSMultipartOperationListMultipartUploadsFinished:result:">&ndash;&nbsp;OSSMultipartOperationListMultipartUploadsFinished:result:</a></code>
+		<span class="tooltip"><p>ListMultipartUploads 成功</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/OSSMultipartOperationListMultipartUploadsFailed:error:">&ndash;&nbsp;OSSMultipartOperationListMultipartUploadsFailed:error:</a></code>
+		<span class="tooltip"><p>ListMultipartUploads 失败</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/OSSMultipartOperationListPartsFinished:result:">&ndash;&nbsp;OSSMultipartOperationListPartsFinished:result:</a></code>
+		<span class="tooltip"><p>ListParts 成功</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/OSSMultipartOperationListPartsFailed:error:">&ndash;&nbsp;OSSMultipartOperationListPartsFailed:error:</a></code>
+		<span class="tooltip"><p>ListParts 失败</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/OSSMultipartOperationUploadPartFinished:result:">&ndash;&nbsp;OSSMultipartOperationUploadPartFinished:result:</a></code>
+		<span class="tooltip"><p>UploadPart 成功</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/OSSMultipartOperationUploadPartFailed:error:">&ndash;&nbsp;OSSMultipartOperationUploadPartFailed:error:</a></code>
+		<span class="tooltip"><p>UploadPart 失败</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/OSSMultipartOperationAbortMultipartUploadFailed:error:" title="OSSMultipartOperationAbortMultipartUploadFailed:error:"></a>
+	<h3 class="subsubtitle method-title">OSSMultipartOperationAbortMultipartUploadFailed:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Abort<a href="../Classes/MultipartUpload.html">MultipartUpload</a> 失败</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)OSSMultipartOperationAbortMultipartUploadFailed:(OSSMultipartOperation *)<em>operation</em> error:(OSSError *)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>operation</em></dt>
+			<dd><p><a href="../Classes/OSSMultipartOperation.html">OSSMultipartOperation</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p><a href="../Classes/OSSError.html">OSSError</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Abort<a href="../Classes/MultipartUpload.html">MultipartUpload</a> 失败</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSMultipartOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/OSSMultipartOperationAbortMultipartUploadFinished:result:" title="OSSMultipartOperationAbortMultipartUploadFinished:result:"></a>
+	<h3 class="subsubtitle method-title">OSSMultipartOperationAbortMultipartUploadFinished:result:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Abort<a href="../Classes/MultipartUpload.html">MultipartUpload</a> 成功</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)OSSMultipartOperationAbortMultipartUploadFinished:(OSSMultipartOperation *)<em>operation</em> result:(NSString *)<em>uploadId</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>operation</em></dt>
+			<dd><p><a href="../Classes/OSSMultipartOperation.html">OSSMultipartOperation</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>uploadId</em></dt>
+			<dd><p>NSString</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Abort<a href="../Classes/MultipartUpload.html">MultipartUpload</a> 成功</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSMultipartOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/OSSMultipartOperationCompleteMultipartUploadFailed:error:" title="OSSMultipartOperationCompleteMultipartUploadFailed:error:"></a>
+	<h3 class="subsubtitle method-title">OSSMultipartOperationCompleteMultipartUploadFailed:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Complete<a href="../Classes/MultipartUpload.html">MultipartUpload</a> 失败</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)OSSMultipartOperationCompleteMultipartUploadFailed:(OSSMultipartOperation *)<em>operation</em> error:(OSSError *)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>operation</em></dt>
+			<dd><p><a href="../Classes/OSSMultipartOperation.html">OSSMultipartOperation</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p><a href="../Classes/OSSError.html">OSSError</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Complete<a href="../Classes/MultipartUpload.html">MultipartUpload</a> 失败</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSMultipartOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/OSSMultipartOperationCompleteMultipartUploadFinished:result:" title="OSSMultipartOperationCompleteMultipartUploadFinished:result:"></a>
+	<h3 class="subsubtitle method-title">OSSMultipartOperationCompleteMultipartUploadFinished:result:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Complete<a href="../Classes/MultipartUpload.html">MultipartUpload</a> 成功</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)OSSMultipartOperationCompleteMultipartUploadFinished:(OSSMultipartOperation *)<em>operation</em> result:(CompleteMultipartUploadResult *)<em>result</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>operation</em></dt>
+			<dd><p><a href="../Classes/OSSMultipartOperation.html">OSSMultipartOperation</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>result</em></dt>
+			<dd><p><a href="../Classes/CompleteMultipartUploadResult.html">CompleteMultipartUploadResult</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Complete<a href="../Classes/MultipartUpload.html">MultipartUpload</a> 成功</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSMultipartOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/OSSMultipartOperationInitiateMultipartUploadFailed:error:" title="OSSMultipartOperationInitiateMultipartUploadFailed:error:"></a>
+	<h3 class="subsubtitle method-title">OSSMultipartOperationInitiateMultipartUploadFailed:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Initiate<a href="../Classes/MultipartUpload.html">MultipartUpload</a> 失败</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)OSSMultipartOperationInitiateMultipartUploadFailed:(OSSMultipartOperation *)<em>operation</em> error:(OSSError *)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>operation</em></dt>
+			<dd><p><a href="../Classes/OSSMultipartOperation.html">OSSMultipartOperation</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p><a href="../Classes/OSSError.html">OSSError</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Initiate<a href="../Classes/MultipartUpload.html">MultipartUpload</a> 失败</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSMultipartOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/OSSMultipartOperationInitiateMultipartUploadFinished:result:" title="OSSMultipartOperationInitiateMultipartUploadFinished:result:"></a>
+	<h3 class="subsubtitle method-title">OSSMultipartOperationInitiateMultipartUploadFinished:result:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Initiate<a href="../Classes/MultipartUpload.html">MultipartUpload</a> 成功</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)OSSMultipartOperationInitiateMultipartUploadFinished:(OSSMultipartOperation *)<em>operation</em> result:(InitiateMultipartUploadResult *)<em>result</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>operation</em></dt>
+			<dd><p><a href="../Classes/OSSMultipartOperation.html">OSSMultipartOperation</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>result</em></dt>
+			<dd><p><a href="../Classes/InitiateMultipartUploadResult.html">InitiateMultipartUploadResult</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Initiate<a href="../Classes/MultipartUpload.html">MultipartUpload</a> 成功</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSMultipartOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/OSSMultipartOperationListMultipartUploadsFailed:error:" title="OSSMultipartOperationListMultipartUploadsFailed:error:"></a>
+	<h3 class="subsubtitle method-title">OSSMultipartOperationListMultipartUploadsFailed:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>ListMultipartUploads 失败</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)OSSMultipartOperationListMultipartUploadsFailed:(OSSMultipartOperation *)<em>operation</em> error:(OSSError *)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>operation</em></dt>
+			<dd><p><a href="../Classes/OSSMultipartOperation.html">OSSMultipartOperation</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p><a href="../Classes/OSSError.html">OSSError</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>ListMultipartUploads 失败</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSMultipartOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/OSSMultipartOperationListMultipartUploadsFinished:result:" title="OSSMultipartOperationListMultipartUploadsFinished:result:"></a>
+	<h3 class="subsubtitle method-title">OSSMultipartOperationListMultipartUploadsFinished:result:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>ListMultipartUploads 成功</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)OSSMultipartOperationListMultipartUploadsFinished:(OSSMultipartOperation *)<em>operation</em> result:(MultipartUploadListing *)<em>result</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>operation</em></dt>
+			<dd><p><a href="../Classes/OSSMultipartOperation.html">OSSMultipartOperation</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>result</em></dt>
+			<dd><p><a href="../Classes/MultipartUploadListing.html">MultipartUploadListing</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>ListMultipartUploads 成功</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSMultipartOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/OSSMultipartOperationListPartsFailed:error:" title="OSSMultipartOperationListPartsFailed:error:"></a>
+	<h3 class="subsubtitle method-title">OSSMultipartOperationListPartsFailed:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>ListParts 失败</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)OSSMultipartOperationListPartsFailed:(OSSMultipartOperation *)<em>operation</em> error:(OSSError *)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>operation</em></dt>
+			<dd><p><a href="../Classes/OSSMultipartOperation.html">OSSMultipartOperation</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p><a href="../Classes/OSSError.html">OSSError</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>ListParts 失败</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSMultipartOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/OSSMultipartOperationListPartsFinished:result:" title="OSSMultipartOperationListPartsFinished:result:"></a>
+	<h3 class="subsubtitle method-title">OSSMultipartOperationListPartsFinished:result:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>ListParts 成功</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)OSSMultipartOperationListPartsFinished:(OSSMultipartOperation *)<em>operation</em> result:(PartListing *)<em>result</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>operation</em></dt>
+			<dd><p><a href="../Classes/OSSMultipartOperation.html">OSSMultipartOperation</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>result</em></dt>
+			<dd><p><a href="../Classes/PartListing.html">PartListing</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>ListParts 成功</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSMultipartOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/OSSMultipartOperationNetWorkFailed:error:" title="OSSMultipartOperationNetWorkFailed:error:"></a>
+	<h3 class="subsubtitle method-title">OSSMultipartOperationNetWorkFailed:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>network 失败</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)OSSMultipartOperationNetWorkFailed:(OSSMultipartOperation *)<em>operation</em> error:(OSSError *)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>operation</em></dt>
+			<dd><p><a href="../Classes/OSSMultipartOperation.html">OSSMultipartOperation</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p><a href="../Classes/OSSError.html">OSSError</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>network 失败</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSMultipartOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/OSSMultipartOperationUploadPartFailed:error:" title="OSSMultipartOperationUploadPartFailed:error:"></a>
+	<h3 class="subsubtitle method-title">OSSMultipartOperationUploadPartFailed:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>UploadPart 失败</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)OSSMultipartOperationUploadPartFailed:(OSSMultipartOperation *)<em>operation</em> error:(OSSError *)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>operation</em></dt>
+			<dd><p><a href="../Classes/OSSMultipartOperation.html">OSSMultipartOperation</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p><a href="../Classes/OSSError.html">OSSError</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>UploadPart 失败</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSMultipartOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/OSSMultipartOperationUploadPartFinished:result:" title="OSSMultipartOperationUploadPartFinished:result:"></a>
+	<h3 class="subsubtitle method-title">OSSMultipartOperationUploadPartFinished:result:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>UploadPart 成功</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)OSSMultipartOperationUploadPartFinished:(OSSMultipartOperation *)<em>operation</em> result:(UploadPartResult *)<em>result</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>operation</em></dt>
+			<dd><p><a href="../Classes/OSSMultipartOperation.html">OSSMultipartOperation</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>result</em></dt>
+			<dd><p><a href="../Classes/UploadPartResult.html">UploadPartResult</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>UploadPart 成功</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSMultipartOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2012 igis.me. All rights reserved. (Last updated: 2012-09-01)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 789)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

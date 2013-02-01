@@ -1,0 +1,2245 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>OSSClient Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.0.5 (build 789)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">AliyunOpenServiceSDK </a></h1>
+				<a id="developerHome" href="../index.html">igis.me</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">OSSClient Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/delegate">&nbsp;&nbsp;&nbsp;&nbsp;delegate</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/OSSClientWithAccessId:andAccessKey:">&nbsp;&nbsp;&nbsp;&nbsp;+ OSSClientWithAccessId:andAccessKey:</option>
+	
+	<option value="//api/name/OSSClientWithEndPoint:AccessId:andAccessKey:">&nbsp;&nbsp;&nbsp;&nbsp;+ OSSClientWithEndPoint:AccessId:andAccessKey:</option>
+	
+	<option value="//api/name/OSSClientWithEndPoint:AccessId:andAccessKey:andConfig:">&nbsp;&nbsp;&nbsp;&nbsp;+ OSSClientWithEndPoint:AccessId:andAccessKey:andConfig:</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/abortMultipartUpload:">&nbsp;&nbsp;&nbsp;&nbsp;- abortMultipartUpload:</option>
+	
+	<option value="//api/name/completeMultipartUpload:">&nbsp;&nbsp;&nbsp;&nbsp;- completeMultipartUpload:</option>
+	
+	<option value="//api/name/copyObject:">&nbsp;&nbsp;&nbsp;&nbsp;- copyObject:</option>
+	
+	<option value="//api/name/createBucket:">&nbsp;&nbsp;&nbsp;&nbsp;- createBucket:</option>
+	
+	<option value="//api/name/deleteBucket:">&nbsp;&nbsp;&nbsp;&nbsp;- deleteBucket:</option>
+	
+	<option value="//api/name/deleteMultipleObjects:objectNames:isQuiet:">&nbsp;&nbsp;&nbsp;&nbsp;- deleteMultipleObjects:objectNames:isQuiet:</option>
+	
+	<option value="//api/name/deleteObject:key:">&nbsp;&nbsp;&nbsp;&nbsp;- deleteObject:key:</option>
+	
+	<option value="//api/name/fetchObject:">&nbsp;&nbsp;&nbsp;&nbsp;- fetchObject:</option>
+	
+	<option value="//api/name/fetchObject:file:">&nbsp;&nbsp;&nbsp;&nbsp;- fetchObject:file:</option>
+	
+	<option value="//api/name/fetchObject:key:">&nbsp;&nbsp;&nbsp;&nbsp;- fetchObject:key:</option>
+	
+	<option value="//api/name/fetchObjectGroupIndex:key:">&nbsp;&nbsp;&nbsp;&nbsp;- fetchObjectGroupIndex:key:</option>
+	
+	<option value="//api/name/fetchObjectMetadata:key:">&nbsp;&nbsp;&nbsp;&nbsp;- fetchObjectMetadata:key:</option>
+	
+	<option value="//api/name/initWithAccessId:andAccessKey:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithAccessId:andAccessKey:</option>
+	
+	<option value="//api/name/initWithEndPoint:AccessId:andAccessKey:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithEndPoint:AccessId:andAccessKey:</option>
+	
+	<option value="//api/name/initWithEndPoint:AccessId:andAccessKey:andConfig:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithEndPoint:AccessId:andAccessKey:andConfig:</option>
+	
+	<option value="//api/name/initiateMultipartUpload:">&nbsp;&nbsp;&nbsp;&nbsp;- initiateMultipartUpload:</option>
+	
+	<option value="//api/name/isBucketExist:">&nbsp;&nbsp;&nbsp;&nbsp;- isBucketExist:</option>
+	
+	<option value="//api/name/listBuckets">&nbsp;&nbsp;&nbsp;&nbsp;- listBuckets</option>
+	
+	<option value="//api/name/listMultipartUploads:">&nbsp;&nbsp;&nbsp;&nbsp;- listMultipartUploads:</option>
+	
+	<option value="//api/name/listObjects:">&nbsp;&nbsp;&nbsp;&nbsp;- listObjects:</option>
+	
+	<option value="//api/name/listParts:">&nbsp;&nbsp;&nbsp;&nbsp;- listParts:</option>
+	
+	<option value="//api/name/postObjectGroup:">&nbsp;&nbsp;&nbsp;&nbsp;- postObjectGroup:</option>
+	
+	<option value="//api/name/putObject:key:data:objectMetadata:">&nbsp;&nbsp;&nbsp;&nbsp;- putObject:key:data:objectMetadata:</option>
+	
+	<option value="//api/name/readBucketAcl:">&nbsp;&nbsp;&nbsp;&nbsp;- readBucketAcl:</option>
+	
+	<option value="//api/name/uploadPart:">&nbsp;&nbsp;&nbsp;&nbsp;- uploadPart:</option>
+	
+	<option value="//api/name/writeBucketAcl:cannedAccessControlList:">&nbsp;&nbsp;&nbsp;&nbsp;- writeBucketAcl:cannedAccessControlList:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/delegate">delegate</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/OSSClientWithAccessId:andAccessKey:">OSSClientWithAccessId:andAccessKey:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/OSSClientWithEndPoint:AccessId:andAccessKey:">OSSClientWithEndPoint:AccessId:andAccessKey:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/OSSClientWithEndPoint:AccessId:andAccessKey:andConfig:">OSSClientWithEndPoint:AccessId:andAccessKey:andConfig:</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/abortMultipartUpload:">abortMultipartUpload:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/completeMultipartUpload:">completeMultipartUpload:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/copyObject:">copyObject:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/createBucket:">createBucket:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/deleteBucket:">deleteBucket:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/deleteMultipleObjects:objectNames:isQuiet:">deleteMultipleObjects:objectNames:isQuiet:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/deleteObject:key:">deleteObject:key:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fetchObject:">fetchObject:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fetchObject:file:">fetchObject:file:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fetchObject:key:">fetchObject:key:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fetchObjectGroupIndex:key:">fetchObjectGroupIndex:key:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fetchObjectMetadata:key:">fetchObjectMetadata:key:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithAccessId:andAccessKey:">initWithAccessId:andAccessKey:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithEndPoint:AccessId:andAccessKey:">initWithEndPoint:AccessId:andAccessKey:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithEndPoint:AccessId:andAccessKey:andConfig:">initWithEndPoint:AccessId:andAccessKey:andConfig:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initiateMultipartUpload:">initiateMultipartUpload:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isBucketExist:">isBucketExist:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/listBuckets">listBuckets</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/listMultipartUploads:">listMultipartUploads:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/listObjects:">listObjects:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/listParts:">listParts:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/postObjectGroup:">postObjectGroup:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/putObject:key:data:objectMetadata:">putObject:key:data:objectMetadata:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/readBucketAcl:">readBucketAcl:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/uploadPart:">uploadPart:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/writeBucketAcl:cannedAccessControlList:">writeBucketAcl:cannedAccessControlList:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="OSSClient Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">OSSClient Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">OSSClient.h<br />OSSClient.m</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>OSSClient ,OSS SDK 的核心类，用来对Bucket，Object等对象进行操作，所有的API功能都通过该类调用</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/delegate">&nbsp;&nbsp;delegate</a></code>
+		<span class="tooltip"><p><a href="../Protocols/OSSClientDelegate.html">OSSClientDelegate</a> 代理对象</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithAccessId:andAccessKey:">&ndash;&nbsp;initWithAccessId:andAccessKey:</a></code>
+		<span class="tooltip"><p>初始化方法</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithEndPoint:AccessId:andAccessKey:">&ndash;&nbsp;initWithEndPoint:AccessId:andAccessKey:</a></code>
+		<span class="tooltip"><p>初始化方法</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithEndPoint:AccessId:andAccessKey:andConfig:">&ndash;&nbsp;initWithEndPoint:AccessId:andAccessKey:andConfig:</a></code>
+		<span class="tooltip"><p>初始化方法</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/OSSClientWithAccessId:andAccessKey:">+&nbsp;OSSClientWithAccessId:andAccessKey:</a></code>
+		<span class="tooltip"><p>静态初始化方法 返回autorelease 对象</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/OSSClientWithEndPoint:AccessId:andAccessKey:">+&nbsp;OSSClientWithEndPoint:AccessId:andAccessKey:</a></code>
+		<span class="tooltip"><p>静态初始化方法 返回autorelease 对象</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/OSSClientWithEndPoint:AccessId:andAccessKey:andConfig:">+&nbsp;OSSClientWithEndPoint:AccessId:andAccessKey:andConfig:</a></code>
+		<span class="tooltip"><p>静态初始化方法 返回autorelease 对象</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/createBucket:">&ndash;&nbsp;createBucket:</a></code>
+		<span class="tooltip"><p>创建bucket</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/deleteBucket:">&ndash;&nbsp;deleteBucket:</a></code>
+		<span class="tooltip"><p>删除bucket</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/listBuckets">&ndash;&nbsp;listBuckets</a></code>
+		<span class="tooltip"><p>  list bucket</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/writeBucketAcl:cannedAccessControlList:">&ndash;&nbsp;writeBucketAcl:cannedAccessControlList:</a></code>
+		<span class="tooltip"><p>写 bucket 的 AccessControlList
+在ios中 get set开头的默认为属性的方法，所以此处改为read/write ,分别对应文档中的setBucketAcl 和getBucketAcl方法</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/readBucketAcl:">&ndash;&nbsp;readBucketAcl:</a></code>
+		<span class="tooltip"><p>  读 bucket 的 AccessControlList
+  在ios中 get set开头的默认为属性的方法，所以此处改为read/write ,分别对应文档中的setBucketAcl 和getBucketAcl方法</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isBucketExist:">&ndash;&nbsp;isBucketExist:</a></code>
+		<span class="tooltip"><p>查询bucket是否存在</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/listObjects:">&ndash;&nbsp;listObjects:</a></code>
+		<span class="tooltip"><p>list Objects</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/putObject:key:data:objectMetadata:">&ndash;&nbsp;putObject:key:data:objectMetadata:</a></code>
+		<span class="tooltip"><p>上传 object</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fetchObject:key:">&ndash;&nbsp;fetchObject:key:</a></code>
+		<span class="tooltip"><p>获取object</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fetchObject:">&ndash;&nbsp;fetchObject:</a></code>
+		<span class="tooltip"><p>获取object</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fetchObject:file:">&ndash;&nbsp;fetchObject:file:</a></code>
+		<span class="tooltip"><p>获取object 并写到文件中</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fetchObjectMetadata:key:">&ndash;&nbsp;fetchObjectMetadata:key:</a></code>
+		<span class="tooltip"><p>获取Object元数据</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/copyObject:">&ndash;&nbsp;copyObject:</a></code>
+		<span class="tooltip"><p>拷贝object</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/deleteObject:key:">&ndash;&nbsp;deleteObject:key:</a></code>
+		<span class="tooltip"><p>删除object</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/deleteMultipleObjects:objectNames:isQuiet:">&ndash;&nbsp;deleteMultipleObjects:objectNames:isQuiet:</a></code>
+		<span class="tooltip"><p>删除多个object</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/uploadPart:">&ndash;&nbsp;uploadPart:</a></code>
+		<span class="tooltip"><p>多点上传 上传其中的一部分</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/listParts:">&ndash;&nbsp;listParts:</a></code>
+		<span class="tooltip"><p>多点上传 列出单个Object上传的部分</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/listMultipartUploads:">&ndash;&nbsp;listMultipartUploads:</a></code>
+		<span class="tooltip"><p>多点上传 列出所有Object上传的部分</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initiateMultipartUpload:">&ndash;&nbsp;initiateMultipartUpload:</a></code>
+		<span class="tooltip"><p>多点上传 初始化多点上传请求</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/completeMultipartUpload:">&ndash;&nbsp;completeMultipartUpload:</a></code>
+		<span class="tooltip"><p>多点上传 完成多点上传请求</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/abortMultipartUpload:">&ndash;&nbsp;abortMultipartUpload:</a></code>
+		<span class="tooltip"><p>多点上传 取消多点上传请求</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/postObjectGroup:">&ndash;&nbsp;postObjectGroup:</a></code>
+		<span class="tooltip"><p>  提交 Object Group</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fetchObjectGroupIndex:key:">&ndash;&nbsp;fetchObjectGroupIndex:key:</a></code>
+		<span class="tooltip"><p>获取 Object Group索引</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/delegate" title="delegate"></a>
+	<h3 class="subsubtitle method-title">delegate</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p><a href="../Protocols/OSSClientDelegate.html">OSSClientDelegate</a> 代理对象</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) id&lt;OSSClientDelegate&gt; delegate</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p><a href="../Protocols/OSSClientDelegate.html">OSSClientDelegate</a> 代理对象</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/OSSClientWithAccessId:andAccessKey:" title="OSSClientWithAccessId:andAccessKey:"></a>
+	<h3 class="subsubtitle method-title">OSSClientWithAccessId:andAccessKey:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>静态初始化方法 返回autorelease 对象</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (id)OSSClientWithAccessId:(NSString *)<em>accessID</em> andAccessKey:(NSString *)<em>accessKey</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>accessID</em></dt>
+			<dd><p>NSString</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>accessKey</em></dt>
+			<dd><p>NSString</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>静态初始化方法 返回autorelease 对象</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/OSSClientWithEndPoint:AccessId:andAccessKey:" title="OSSClientWithEndPoint:AccessId:andAccessKey:"></a>
+	<h3 class="subsubtitle method-title">OSSClientWithEndPoint:AccessId:andAccessKey:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>静态初始化方法 返回autorelease 对象</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (id)OSSClientWithEndPoint:(NSString *)<em>endpoint</em> AccessId:(NSString *)<em>accessID</em> andAccessKey:(NSString *)<em>accessKey</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>endpoint</em></dt>
+			<dd><p>NSString</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>accessID</em></dt>
+			<dd><p>NSString</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>accessKey</em></dt>
+			<dd><p>NSString</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>静态初始化方法 返回autorelease 对象</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/OSSClientWithEndPoint:AccessId:andAccessKey:andConfig:" title="OSSClientWithEndPoint:AccessId:andAccessKey:andConfig:"></a>
+	<h3 class="subsubtitle method-title">OSSClientWithEndPoint:AccessId:andAccessKey:andConfig:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>静态初始化方法 返回autorelease 对象</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (id)OSSClientWithEndPoint:(NSString *)<em>endpoint</em> AccessId:(NSString *)<em>accessID</em> andAccessKey:(NSString *)<em>accessKey</em> andConfig:(ClientConfiguration *)<em>config</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>endpoint</em></dt>
+			<dd><p>NSString</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>accessID</em></dt>
+			<dd><p>NSString</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>accessKey</em></dt>
+			<dd><p>NSString</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>config</em></dt>
+			<dd><p><a href="../Classes/ClientConfiguration.html">ClientConfiguration</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>静态初始化方法 返回autorelease 对象</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/abortMultipartUpload:" title="abortMultipartUpload:"></a>
+	<h3 class="subsubtitle method-title">abortMultipartUpload:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>多点上传 取消多点上传请求</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)abortMultipartUpload:(AbortMultipartUploadRequest *)<em>abortMultipartUploadRequest</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>abortMultipartUploadRequest</em></dt>
+			<dd><p><a href="../Classes/AbortMultipartUploadRequest.html">AbortMultipartUploadRequest</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>多点上传 取消多点上传请求</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/completeMultipartUpload:" title="completeMultipartUpload:"></a>
+	<h3 class="subsubtitle method-title">completeMultipartUpload:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>多点上传 完成多点上传请求</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)completeMultipartUpload:(CompleteMultipartUploadRequest *)<em>completeMultipartUploadRequest</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completeMultipartUploadRequest</em></dt>
+			<dd><p><a href="../Classes/CompleteMultipartUploadRequest.html">CompleteMultipartUploadRequest</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>多点上传 完成多点上传请求</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/copyObject:" title="copyObject:"></a>
+	<h3 class="subsubtitle method-title">copyObject:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>拷贝object</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)copyObject:(CopyObjectRequest *)<em>copyObjectRequest</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>copyObjectRequest</em></dt>
+			<dd><p><a href="../Classes/CopyObjectRequest.html">CopyObjectRequest</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>拷贝object</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/createBucket:" title="createBucket:"></a>
+	<h3 class="subsubtitle method-title">createBucket:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>创建bucket</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)createBucket:(NSString *)<em>bucketName</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>bucketName</em></dt>
+			<dd><p>NSString</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>创建bucket</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/deleteBucket:" title="deleteBucket:"></a>
+	<h3 class="subsubtitle method-title">deleteBucket:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>删除bucket</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)deleteBucket:(NSString *)<em>bucketName</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>bucketName</em></dt>
+			<dd><p>NSString</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>删除bucket</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/deleteMultipleObjects:objectNames:isQuiet:" title="deleteMultipleObjects:objectNames:isQuiet:"></a>
+	<h3 class="subsubtitle method-title">deleteMultipleObjects:objectNames:isQuiet:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>删除多个object</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)deleteMultipleObjects:(NSString *)<em>bucketName</em> objectNames:(NSArray *)<em>objectNames</em> isQuiet:(BOOL)<em>isQuiet</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>bucketName</em></dt>
+			<dd><p>NSString</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>objectNames</em></dt>
+			<dd><p>NSArray</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>isQuiet</em></dt>
+			<dd><p>BOOL</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>删除多个object</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/deleteObject:key:" title="deleteObject:key:"></a>
+	<h3 class="subsubtitle method-title">deleteObject:key:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>删除object</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)deleteObject:(NSString *)<em>bucketName</em> key:(NSString *)<em>key</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>bucketName</em></dt>
+			<dd><p>NSString</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>key</em></dt>
+			<dd><p>NSString</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>删除object</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fetchObject:" title="fetchObject:"></a>
+	<h3 class="subsubtitle method-title">fetchObject:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>获取object</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)fetchObject:(FetchObjectRequest *)<em>fetchObjectRequest</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>fetchObjectRequest</em></dt>
+			<dd><p><a href="../Classes/FetchObjectRequest.html">FetchObjectRequest</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>获取object</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fetchObject:file:" title="fetchObject:file:"></a>
+	<h3 class="subsubtitle method-title">fetchObject:file:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>获取object 并写到文件中</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)fetchObject:(FetchObjectRequest *)<em>fetchObjectRequest</em> file:(NSString *)<em>filePath</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>fetchObjectRequest</em></dt>
+			<dd><p><a href="../Classes/FetchObjectRequest.html">FetchObjectRequest</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>filePath</em></dt>
+			<dd><p>NSString</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>获取object 并写到文件中</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fetchObject:key:" title="fetchObject:key:"></a>
+	<h3 class="subsubtitle method-title">fetchObject:key:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>获取object</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)fetchObject:(NSString *)<em>bucketName</em> key:(NSString *)<em>key</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>bucketName</em></dt>
+			<dd><p>NSString</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>key</em></dt>
+			<dd><p>NSString</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>获取object</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fetchObjectGroupIndex:key:" title="fetchObjectGroupIndex:key:"></a>
+	<h3 class="subsubtitle method-title">fetchObjectGroupIndex:key:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>获取 Object Group索引</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)fetchObjectGroupIndex:(NSString *)<em>bucketName</em> key:(NSString *)<em>key</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>bucketName</em></dt>
+			<dd><p>NSString</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>key</em></dt>
+			<dd><p>NSString</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>获取 Object Group索引</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fetchObjectMetadata:key:" title="fetchObjectMetadata:key:"></a>
+	<h3 class="subsubtitle method-title">fetchObjectMetadata:key:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>获取Object元数据</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)fetchObjectMetadata:(NSString *)<em>bucketName</em> key:(NSString *)<em>key</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>bucketName</em></dt>
+			<dd><p>NSString</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>key</em></dt>
+			<dd><p>NSString</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>获取Object元数据</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithAccessId:andAccessKey:" title="initWithAccessId:andAccessKey:"></a>
+	<h3 class="subsubtitle method-title">initWithAccessId:andAccessKey:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>初始化方法</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithAccessId:(NSString *)<em>accessID</em> andAccessKey:(NSString *)<em>accessKey</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>accessID</em></dt>
+			<dd><p>NSString</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>accessKey</em></dt>
+			<dd><p>NSString</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>初始化方法</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithEndPoint:AccessId:andAccessKey:" title="initWithEndPoint:AccessId:andAccessKey:"></a>
+	<h3 class="subsubtitle method-title">initWithEndPoint:AccessId:andAccessKey:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>初始化方法</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithEndPoint:(NSString *)<em>endpoint</em> AccessId:(NSString *)<em>accessID</em> andAccessKey:(NSString *)<em>accessKey</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>endpoint</em></dt>
+			<dd><p>NSString</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>accessID</em></dt>
+			<dd><p>NSString</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>accessKey</em></dt>
+			<dd><p>NSString</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>初始化方法</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithEndPoint:AccessId:andAccessKey:andConfig:" title="initWithEndPoint:AccessId:andAccessKey:andConfig:"></a>
+	<h3 class="subsubtitle method-title">initWithEndPoint:AccessId:andAccessKey:andConfig:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>初始化方法</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithEndPoint:(NSString *)<em>endpoint</em> AccessId:(NSString *)<em>accessID</em> andAccessKey:(NSString *)<em>accessKey</em> andConfig:(ClientConfiguration *)<em>config</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>endpoint</em></dt>
+			<dd><p>NSString</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>accessID</em></dt>
+			<dd><p>NSString</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>accessKey</em></dt>
+			<dd><p>NSString</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>config</em></dt>
+			<dd><p><a href="../Classes/ClientConfiguration.html">ClientConfiguration</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>初始化方法</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initiateMultipartUpload:" title="initiateMultipartUpload:"></a>
+	<h3 class="subsubtitle method-title">initiateMultipartUpload:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>多点上传 初始化多点上传请求</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)initiateMultipartUpload:(InitiateMultipartUploadRequest *)<em>initiateMultipartUploadRequest</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>initiateMultipartUploadRequest</em></dt>
+			<dd><p><a href="../Classes/InitiateMultipartUploadRequest.html">InitiateMultipartUploadRequest</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>多点上传 初始化多点上传请求</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isBucketExist:" title="isBucketExist:"></a>
+	<h3 class="subsubtitle method-title">isBucketExist:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>查询bucket是否存在</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)isBucketExist:(NSString *)<em>bucketName</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>bucketName</em></dt>
+			<dd><p>NSString</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>查询bucket是否存在</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/listBuckets" title="listBuckets"></a>
+	<h3 class="subsubtitle method-title">listBuckets</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>  list bucket</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)listBuckets</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>  list bucket</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/listMultipartUploads:" title="listMultipartUploads:"></a>
+	<h3 class="subsubtitle method-title">listMultipartUploads:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>多点上传 列出所有Object上传的部分</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)listMultipartUploads:(ListMultipartUploadsRequest *)<em>listMultipartUploadsRequest</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>listMultipartUploadsRequest</em></dt>
+			<dd><p><a href="../Classes/ListMultipartUploadsRequest.html">ListMultipartUploadsRequest</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>多点上传 列出所有Object上传的部分</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/listObjects:" title="listObjects:"></a>
+	<h3 class="subsubtitle method-title">listObjects:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>list Objects</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)listObjects:(ListObjectsRequest *)<em>listObjectsRequest</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>listObjectsRequest</em></dt>
+			<dd><p><a href="../Classes/ListObjectsRequest.html">ListObjectsRequest</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>list Objects</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/listParts:" title="listParts:"></a>
+	<h3 class="subsubtitle method-title">listParts:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>多点上传 列出单个Object上传的部分</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)listParts:(ListPartsRequest *)<em>listPartsRequest</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>listPartsRequest</em></dt>
+			<dd><p><a href="../Classes/ListPartsRequest.html">ListPartsRequest</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>多点上传 列出单个Object上传的部分</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/postObjectGroup:" title="postObjectGroup:"></a>
+	<h3 class="subsubtitle method-title">postObjectGroup:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>  提交 Object Group</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)postObjectGroup:(PostObjectGroupRequest *)<em>postObjectGroupRequest</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>postObjectGroupRequest</em></dt>
+			<dd><p><a href="../Classes/PostObjectGroupRequest.html">PostObjectGroupRequest</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>  提交 Object Group</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/putObject:key:data:objectMetadata:" title="putObject:key:data:objectMetadata:"></a>
+	<h3 class="subsubtitle method-title">putObject:key:data:objectMetadata:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>上传 object</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)putObject:(NSString *)<em>bucketName</em> key:(NSString *)<em>key</em> data:(NSData *)<em>data</em> objectMetadata:(ObjectMetadata *)<em>objectMetadata</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>bucketName</em></dt>
+			<dd><p>NSString</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>key</em></dt>
+			<dd><p>NSString</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>data</em></dt>
+			<dd><p>NSData</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>objectMetadata</em></dt>
+			<dd><p><a href="../Classes/ObjectMetadata.html">ObjectMetadata</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>上传 object</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/readBucketAcl:" title="readBucketAcl:"></a>
+	<h3 class="subsubtitle method-title">readBucketAcl:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>  读 bucket 的 AccessControlList
+  在ios中 get set开头的默认为属性的方法，所以此处改为read/write ,分别对应文档中的setBucketAcl 和getBucketAcl方法</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)readBucketAcl:(NSString *)<em>bucketName</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>bucketName</em></dt>
+			<dd><p>NSString</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>  读 bucket 的 AccessControlList
+  在ios中 get set开头的默认为属性的方法，所以此处改为read/write ,分别对应文档中的setBucketAcl 和getBucketAcl方法</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/uploadPart:" title="uploadPart:"></a>
+	<h3 class="subsubtitle method-title">uploadPart:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>多点上传 上传其中的一部分</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)uploadPart:(UploadPartRequest *)<em>uploadPartRequest</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>uploadPartRequest</em></dt>
+			<dd><p><a href="../Classes/UploadPartRequest.html">UploadPartRequest</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>多点上传 上传其中的一部分</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/writeBucketAcl:cannedAccessControlList:" title="writeBucketAcl:cannedAccessControlList:"></a>
+	<h3 class="subsubtitle method-title">writeBucketAcl:cannedAccessControlList:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>写 bucket 的 AccessControlList
+在ios中 get set开头的默认为属性的方法，所以此处改为read/write ,分别对应文档中的setBucketAcl 和getBucketAcl方法</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)writeBucketAcl:(NSString *)<em>bucketName</em> cannedAccessControlList:(CannedAccessControlList *)<em>cannedAccessControlList</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>bucketName</em></dt>
+			<dd><p>NSString</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>cannedAccessControlList</em></dt>
+			<dd><p><a href="../Classes/CannedAccessControlList.html">CannedAccessControlList</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>写 bucket 的 AccessControlList
+在ios中 get set开头的默认为属性的方法，所以此处改为read/write ,分别对应文档中的setBucketAcl 和getBucketAcl方法</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OSSClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2012 igis.me. All rights reserved. (Last updated: 2012-09-01)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 789)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

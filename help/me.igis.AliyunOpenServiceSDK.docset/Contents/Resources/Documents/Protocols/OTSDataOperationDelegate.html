@@ -1,0 +1,1129 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>OTSDataOperationDelegate Protocol Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.0.5 (build 789)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">AliyunOpenServiceSDK </a></h1>
+				<a id="developerHome" href="../index.html">igis.me</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">OTSDataOperationDelegate Protocol Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/dataOperationBatchModifyDataFailed:error:">&nbsp;&nbsp;&nbsp;&nbsp;- dataOperationBatchModifyDataFailed:error:</option>
+	
+	<option value="//api/name/dataOperationBatchModifyDataFinished:result:">&nbsp;&nbsp;&nbsp;&nbsp;- dataOperationBatchModifyDataFinished:result:</option>
+	
+	<option value="//api/name/dataOperationDeleteDataFailed:error:">&nbsp;&nbsp;&nbsp;&nbsp;- dataOperationDeleteDataFailed:error:</option>
+	
+	<option value="//api/name/dataOperationDeleteDataFinished:result:">&nbsp;&nbsp;&nbsp;&nbsp;- dataOperationDeleteDataFinished:result:</option>
+	
+	<option value="//api/name/dataOperationFetchRowFailed:error:">&nbsp;&nbsp;&nbsp;&nbsp;- dataOperationFetchRowFailed:error:</option>
+	
+	<option value="//api/name/dataOperationFetchRowFinished:result:">&nbsp;&nbsp;&nbsp;&nbsp;- dataOperationFetchRowFinished:result:</option>
+	
+	<option value="//api/name/dataOperationFetchRowsByOffsetFailed:error:">&nbsp;&nbsp;&nbsp;&nbsp;- dataOperationFetchRowsByOffsetFailed:error:</option>
+	
+	<option value="//api/name/dataOperationFetchRowsByOffsetFinished:result:">&nbsp;&nbsp;&nbsp;&nbsp;- dataOperationFetchRowsByOffsetFinished:result:</option>
+	
+	<option value="//api/name/dataOperationFetchRowsByRangeFailed:error:">&nbsp;&nbsp;&nbsp;&nbsp;- dataOperationFetchRowsByRangeFailed:error:</option>
+	
+	<option value="//api/name/dataOperationFetchRowsByRangeFinished:result:">&nbsp;&nbsp;&nbsp;&nbsp;- dataOperationFetchRowsByRangeFinished:result:</option>
+	
+	<option value="//api/name/dataOperationNetworkError:error:">&nbsp;&nbsp;&nbsp;&nbsp;- dataOperationNetworkError:error:</option>
+	
+	<option value="//api/name/dataOperationPutDataFailed:error:">&nbsp;&nbsp;&nbsp;&nbsp;- dataOperationPutDataFailed:error:</option>
+	
+	<option value="//api/name/dataOperationPutDataFinished:result:">&nbsp;&nbsp;&nbsp;&nbsp;- dataOperationPutDataFinished:result:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dataOperationBatchModifyDataFailed:error:">dataOperationBatchModifyDataFailed:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dataOperationBatchModifyDataFinished:result:">dataOperationBatchModifyDataFinished:result:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dataOperationDeleteDataFailed:error:">dataOperationDeleteDataFailed:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dataOperationDeleteDataFinished:result:">dataOperationDeleteDataFinished:result:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dataOperationFetchRowFailed:error:">dataOperationFetchRowFailed:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dataOperationFetchRowFinished:result:">dataOperationFetchRowFinished:result:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dataOperationFetchRowsByOffsetFailed:error:">dataOperationFetchRowsByOffsetFailed:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dataOperationFetchRowsByOffsetFinished:result:">dataOperationFetchRowsByOffsetFinished:result:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dataOperationFetchRowsByRangeFailed:error:">dataOperationFetchRowsByRangeFailed:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dataOperationFetchRowsByRangeFinished:result:">dataOperationFetchRowsByRangeFinished:result:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dataOperationNetworkError:error:">dataOperationNetworkError:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dataOperationPutDataFailed:error:">dataOperationPutDataFailed:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dataOperationPutDataFinished:result:">dataOperationPutDataFinished:result:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="OTSDataOperationDelegate Protocol Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">OTSDataOperationDelegate Protocol Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">OTSDataOperation.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p><a href="OTSDataOperationDelegate.html">OTSDataOperationDelegate</a></p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dataOperationNetworkError:error:">&ndash;&nbsp;dataOperationNetworkError:error:</a></code>
+		<span class="tooltip"><p>网络错误响应</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dataOperationFetchRowFinished:result:">&ndash;&nbsp;dataOperationFetchRowFinished:result:</a></code>
+		<span class="tooltip"><p>获取Row成功</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dataOperationFetchRowFailed:error:">&ndash;&nbsp;dataOperationFetchRowFailed:error:</a></code>
+		<span class="tooltip"><p>获取Row失败</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dataOperationFetchRowsByOffsetFinished:result:">&ndash;&nbsp;dataOperationFetchRowsByOffsetFinished:result:</a></code>
+		<span class="tooltip"><p>通过Offset获取Row成功</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dataOperationFetchRowsByOffsetFailed:error:">&ndash;&nbsp;dataOperationFetchRowsByOffsetFailed:error:</a></code>
+		<span class="tooltip"><p>通过Offset获取Row失败</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dataOperationFetchRowsByRangeFinished:result:">&ndash;&nbsp;dataOperationFetchRowsByRangeFinished:result:</a></code>
+		<span class="tooltip"><p>通过Range获取Row成功</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dataOperationFetchRowsByRangeFailed:error:">&ndash;&nbsp;dataOperationFetchRowsByRangeFailed:error:</a></code>
+		<span class="tooltip"><p>通过Range获取Row失败</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dataOperationPutDataFinished:result:">&ndash;&nbsp;dataOperationPutDataFinished:result:</a></code>
+		<span class="tooltip"><p>写表数据成功</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dataOperationPutDataFailed:error:">&ndash;&nbsp;dataOperationPutDataFailed:error:</a></code>
+		<span class="tooltip"><p>写表数据失败</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dataOperationDeleteDataFinished:result:">&ndash;&nbsp;dataOperationDeleteDataFinished:result:</a></code>
+		<span class="tooltip"><p>删除表数据成功</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dataOperationDeleteDataFailed:error:">&ndash;&nbsp;dataOperationDeleteDataFailed:error:</a></code>
+		<span class="tooltip"><p>删除表数据失败</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dataOperationBatchModifyDataFinished:result:">&ndash;&nbsp;dataOperationBatchModifyDataFinished:result:</a></code>
+		<span class="tooltip"><p>批量修改表数据成功</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dataOperationBatchModifyDataFailed:error:">&ndash;&nbsp;dataOperationBatchModifyDataFailed:error:</a></code>
+		<span class="tooltip"><p>批量修改表数据失败</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/dataOperationBatchModifyDataFailed:error:" title="dataOperationBatchModifyDataFailed:error:"></a>
+	<h3 class="subsubtitle method-title">dataOperationBatchModifyDataFailed:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>批量修改表数据失败</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)dataOperationBatchModifyDataFailed:(OTSDataOperation *)<em>op</em> error:(OTSError *)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>op</em></dt>
+			<dd><p><a href="../Classes/OTSDataOperation.html">OTSDataOperation</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p><a href="../Classes/OTSError.html">OTSError</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>批量修改表数据失败</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OTSDataOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/dataOperationBatchModifyDataFinished:result:" title="dataOperationBatchModifyDataFinished:result:"></a>
+	<h3 class="subsubtitle method-title">dataOperationBatchModifyDataFinished:result:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>批量修改表数据成功</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)dataOperationBatchModifyDataFinished:(OTSDataOperation *)<em>op</em> result:(NSString *)<em>result</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>op</em></dt>
+			<dd><p><a href="../Classes/OTSDataOperation.html">OTSDataOperation</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>result</em></dt>
+			<dd><p>NSString</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>批量修改表数据成功</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OTSDataOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/dataOperationDeleteDataFailed:error:" title="dataOperationDeleteDataFailed:error:"></a>
+	<h3 class="subsubtitle method-title">dataOperationDeleteDataFailed:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>删除表数据失败</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)dataOperationDeleteDataFailed:(OTSDataOperation *)<em>op</em> error:(OTSError *)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>op</em></dt>
+			<dd><p><a href="../Classes/OTSDataOperation.html">OTSDataOperation</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p><a href="../Classes/OTSError.html">OTSError</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>删除表数据失败</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OTSDataOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/dataOperationDeleteDataFinished:result:" title="dataOperationDeleteDataFinished:result:"></a>
+	<h3 class="subsubtitle method-title">dataOperationDeleteDataFinished:result:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>删除表数据成功</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)dataOperationDeleteDataFinished:(OTSDataOperation *)<em>op</em> result:(NSString *)<em>result</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>op</em></dt>
+			<dd><p><a href="../Classes/OTSDataOperation.html">OTSDataOperation</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>result</em></dt>
+			<dd><p>NSString</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>删除表数据成功</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OTSDataOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/dataOperationFetchRowFailed:error:" title="dataOperationFetchRowFailed:error:"></a>
+	<h3 class="subsubtitle method-title">dataOperationFetchRowFailed:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>获取Row失败</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)dataOperationFetchRowFailed:(OTSDataOperation *)<em>op</em> error:(OTSError *)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>op</em></dt>
+			<dd><p><a href="../Classes/OTSDataOperation.html">OTSDataOperation</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p><a href="../Classes/OTSError.html">OTSError</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>获取Row失败</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OTSDataOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/dataOperationFetchRowFinished:result:" title="dataOperationFetchRowFinished:result:"></a>
+	<h3 class="subsubtitle method-title">dataOperationFetchRowFinished:result:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>获取Row成功</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)dataOperationFetchRowFinished:(OTSDataOperation *)<em>op</em> result:(Row *)<em>result</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>op</em></dt>
+			<dd><p><a href="../Classes/OTSDataOperation.html">OTSDataOperation</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>result</em></dt>
+			<dd><p><a href="../Classes/Row.html">Row</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>获取Row成功</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OTSDataOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/dataOperationFetchRowsByOffsetFailed:error:" title="dataOperationFetchRowsByOffsetFailed:error:"></a>
+	<h3 class="subsubtitle method-title">dataOperationFetchRowsByOffsetFailed:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>通过Offset获取Row失败</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)dataOperationFetchRowsByOffsetFailed:(OTSDataOperation *)<em>op</em> error:(OTSError *)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>op</em></dt>
+			<dd><p><a href="../Classes/OTSDataOperation.html">OTSDataOperation</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p><a href="../Classes/OTSError.html">OTSError</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>通过Offset获取Row失败</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OTSDataOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/dataOperationFetchRowsByOffsetFinished:result:" title="dataOperationFetchRowsByOffsetFinished:result:"></a>
+	<h3 class="subsubtitle method-title">dataOperationFetchRowsByOffsetFinished:result:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>通过Offset获取Row成功</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)dataOperationFetchRowsByOffsetFinished:(OTSDataOperation *)<em>op</em> result:(NSArray *)<em>result</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>op</em></dt>
+			<dd><p><a href="../Classes/OTSDataOperation.html">OTSDataOperation</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>result</em></dt>
+			<dd><p>NSArray</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>通过Offset获取Row成功</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OTSDataOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/dataOperationFetchRowsByRangeFailed:error:" title="dataOperationFetchRowsByRangeFailed:error:"></a>
+	<h3 class="subsubtitle method-title">dataOperationFetchRowsByRangeFailed:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>通过Range获取Row失败</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)dataOperationFetchRowsByRangeFailed:(OTSDataOperation *)<em>op</em> error:(OTSError *)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>op</em></dt>
+			<dd><p><a href="../Classes/OTSDataOperation.html">OTSDataOperation</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p><a href="../Classes/OTSError.html">OTSError</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>通过Range获取Row失败</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OTSDataOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/dataOperationFetchRowsByRangeFinished:result:" title="dataOperationFetchRowsByRangeFinished:result:"></a>
+	<h3 class="subsubtitle method-title">dataOperationFetchRowsByRangeFinished:result:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>通过Range获取Row成功</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)dataOperationFetchRowsByRangeFinished:(OTSDataOperation *)<em>op</em> result:(NSArray *)<em>result</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>op</em></dt>
+			<dd><p><a href="../Classes/OTSDataOperation.html">OTSDataOperation</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>result</em></dt>
+			<dd><p>NSArray</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>通过Range获取Row成功</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OTSDataOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/dataOperationNetworkError:error:" title="dataOperationNetworkError:error:"></a>
+	<h3 class="subsubtitle method-title">dataOperationNetworkError:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>网络错误响应</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)dataOperationNetworkError:(OTSDataOperation *)<em>op</em> error:(OTSError *)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>op</em></dt>
+			<dd><p><a href="../Classes/OTSDataOperation.html">OTSDataOperation</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p><a href="../Classes/OTSError.html">OTSError</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>网络错误响应</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OTSDataOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/dataOperationPutDataFailed:error:" title="dataOperationPutDataFailed:error:"></a>
+	<h3 class="subsubtitle method-title">dataOperationPutDataFailed:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>写表数据失败</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)dataOperationPutDataFailed:(OTSDataOperation *)<em>op</em> error:(OTSError *)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>op</em></dt>
+			<dd><p><a href="../Classes/OTSDataOperation.html">OTSDataOperation</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p><a href="../Classes/OTSError.html">OTSError</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>写表数据失败</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OTSDataOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/dataOperationPutDataFinished:result:" title="dataOperationPutDataFinished:result:"></a>
+	<h3 class="subsubtitle method-title">dataOperationPutDataFinished:result:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>写表数据成功</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)dataOperationPutDataFinished:(OTSDataOperation *)<em>op</em> result:(NSString *)<em>result</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>op</em></dt>
+			<dd><p><a href="../Classes/OTSDataOperation.html">OTSDataOperation</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>result</em></dt>
+			<dd><p>NSString</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>写表数据成功</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OTSDataOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2012 igis.me. All rights reserved. (Last updated: 2012-09-01)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 789)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

@@ -1,0 +1,986 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>HttpHeaders Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.0.5 (build 789)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">AliyunOpenServiceSDK </a></h1>
+				<a id="developerHome" href="../index.html">igis.me</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">HttpHeaders Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/AUTHORIZATION">&nbsp;&nbsp;&nbsp;&nbsp;+ AUTHORIZATION</option>
+	
+	<option value="//api/name/CACHE_CONTROL">&nbsp;&nbsp;&nbsp;&nbsp;+ CACHE_CONTROL</option>
+	
+	<option value="//api/name/CONTENT_DISPOSITION">&nbsp;&nbsp;&nbsp;&nbsp;+ CONTENT_DISPOSITION</option>
+	
+	<option value="//api/name/CONTENT_ENCODING">&nbsp;&nbsp;&nbsp;&nbsp;+ CONTENT_ENCODING</option>
+	
+	<option value="//api/name/CONTENT_LENGTH">&nbsp;&nbsp;&nbsp;&nbsp;+ CONTENT_LENGTH</option>
+	
+	<option value="//api/name/CONTENT_MD5">&nbsp;&nbsp;&nbsp;&nbsp;+ CONTENT_MD5</option>
+	
+	<option value="//api/name/CONTENT_TYPE">&nbsp;&nbsp;&nbsp;&nbsp;+ CONTENT_TYPE</option>
+	
+	<option value="//api/name/DATE">&nbsp;&nbsp;&nbsp;&nbsp;+ DATE</option>
+	
+	<option value="//api/name/ETAG">&nbsp;&nbsp;&nbsp;&nbsp;+ ETAG</option>
+	
+	<option value="//api/name/EXPIRES">&nbsp;&nbsp;&nbsp;&nbsp;+ EXPIRES</option>
+	
+	<option value="//api/name/HOST">&nbsp;&nbsp;&nbsp;&nbsp;+ HOST</option>
+	
+	<option value="//api/name/LAST_MODIFIED">&nbsp;&nbsp;&nbsp;&nbsp;+ LAST_MODIFIED</option>
+	
+	<option value="//api/name/LOCATION">&nbsp;&nbsp;&nbsp;&nbsp;+ LOCATION</option>
+	
+	<option value="//api/name/RANGE">&nbsp;&nbsp;&nbsp;&nbsp;+ RANGE</option>
+	
+	
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/AUTHORIZATION">AUTHORIZATION</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/CACHE_CONTROL">CACHE_CONTROL</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/CONTENT_DISPOSITION">CONTENT_DISPOSITION</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/CONTENT_ENCODING">CONTENT_ENCODING</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/CONTENT_LENGTH">CONTENT_LENGTH</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/CONTENT_MD5">CONTENT_MD5</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/CONTENT_TYPE">CONTENT_TYPE</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/DATE">DATE</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/ETAG">ETAG</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/EXPIRES">EXPIRES</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/HOST">HOST</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/LAST_MODIFIED">LAST_MODIFIED</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/LOCATION">LOCATION</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/RANGE">RANGE</a></span></li>
+	
+</ul></li>
+
+
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="HttpHeaders Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">HttpHeaders Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">HttpHeaders.h<br />HttpHeaders.m</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>HttpHeaders 类，定义基本的HTTPHeader字符串</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/AUTHORIZATION">+&nbsp;AUTHORIZATION</a></code>
+		<span class="tooltip"><p>静态方法，返回 AUTHORIZATION 字符串</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/CACHE_CONTROL">+&nbsp;CACHE_CONTROL</a></code>
+		<span class="tooltip"><p>静态方法，返回 CACHE_CONTROL 字符串</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/CONTENT_DISPOSITION">+&nbsp;CONTENT_DISPOSITION</a></code>
+		<span class="tooltip"><p>静态方法，返回 CONTENT_DISPOSITION 字符串</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/CONTENT_ENCODING">+&nbsp;CONTENT_ENCODING</a></code>
+		<span class="tooltip"><p>静态方法，返回 CONTENT_ENCODING 字符串</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/CONTENT_LENGTH">+&nbsp;CONTENT_LENGTH</a></code>
+		<span class="tooltip"><p>静态方法，返回 CONTENT_LENGTH 字符串</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/CONTENT_MD5">+&nbsp;CONTENT_MD5</a></code>
+		<span class="tooltip"><p>静态方法，返回 CONTENT_MD5 字符串</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/CONTENT_TYPE">+&nbsp;CONTENT_TYPE</a></code>
+		<span class="tooltip"><p>静态方法，返回 CONTENT_TYPE 字符串</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/DATE">+&nbsp;DATE</a></code>
+		<span class="tooltip"><p>静态方法，返回 DATE 字符串</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/ETAG">+&nbsp;ETAG</a></code>
+		<span class="tooltip"><p>静态方法，返回 ETAG 字符串</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/EXPIRES">+&nbsp;EXPIRES</a></code>
+		<span class="tooltip"><p>静态方法，返回 EXPIRES 字符串</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/HOST">+&nbsp;HOST</a></code>
+		<span class="tooltip"><p>静态方法，返回 HOST 字符串</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/LAST_MODIFIED">+&nbsp;LAST_MODIFIED</a></code>
+		<span class="tooltip"><p>静态方法，返回 LAST_MODIFIED 字符串</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/RANGE">+&nbsp;RANGE</a></code>
+		<span class="tooltip"><p>静态方法，返回 RANGE 字符串</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/LOCATION">+&nbsp;LOCATION</a></code>
+		<span class="tooltip"><p>静态方法，返回 LOCATION 字符串</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/AUTHORIZATION" title="AUTHORIZATION"></a>
+	<h3 class="subsubtitle method-title">AUTHORIZATION</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>静态方法，返回 AUTHORIZATION 字符串</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NSString *)AUTHORIZATION</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>静态方法，返回 AUTHORIZATION 字符串</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">HttpHeaders.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/CACHE_CONTROL" title="CACHE_CONTROL"></a>
+	<h3 class="subsubtitle method-title">CACHE_CONTROL</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>静态方法，返回 CACHE_CONTROL 字符串</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NSString *)CACHE_CONTROL</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>静态方法，返回 CACHE_CONTROL 字符串</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">HttpHeaders.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/CONTENT_DISPOSITION" title="CONTENT_DISPOSITION"></a>
+	<h3 class="subsubtitle method-title">CONTENT_DISPOSITION</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>静态方法，返回 CONTENT_DISPOSITION 字符串</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NSString *)CONTENT_DISPOSITION</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>静态方法，返回 CONTENT_DISPOSITION 字符串</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">HttpHeaders.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/CONTENT_ENCODING" title="CONTENT_ENCODING"></a>
+	<h3 class="subsubtitle method-title">CONTENT_ENCODING</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>静态方法，返回 CONTENT_ENCODING 字符串</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NSString *)CONTENT_ENCODING</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>静态方法，返回 CONTENT_ENCODING 字符串</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">HttpHeaders.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/CONTENT_LENGTH" title="CONTENT_LENGTH"></a>
+	<h3 class="subsubtitle method-title">CONTENT_LENGTH</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>静态方法，返回 CONTENT_LENGTH 字符串</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NSString *)CONTENT_LENGTH</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>静态方法，返回 CONTENT_LENGTH 字符串</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">HttpHeaders.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/CONTENT_MD5" title="CONTENT_MD5"></a>
+	<h3 class="subsubtitle method-title">CONTENT_MD5</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>静态方法，返回 CONTENT_MD5 字符串</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NSString *)CONTENT_MD5</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>静态方法，返回 CONTENT_MD5 字符串</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">HttpHeaders.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/CONTENT_TYPE" title="CONTENT_TYPE"></a>
+	<h3 class="subsubtitle method-title">CONTENT_TYPE</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>静态方法，返回 CONTENT_TYPE 字符串</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NSString *)CONTENT_TYPE</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>静态方法，返回 CONTENT_TYPE 字符串</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">HttpHeaders.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/DATE" title="DATE"></a>
+	<h3 class="subsubtitle method-title">DATE</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>静态方法，返回 DATE 字符串</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NSString *)DATE</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>静态方法，返回 DATE 字符串</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">HttpHeaders.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/ETAG" title="ETAG"></a>
+	<h3 class="subsubtitle method-title">ETAG</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>静态方法，返回 ETAG 字符串</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NSString *)ETAG</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>静态方法，返回 ETAG 字符串</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">HttpHeaders.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/EXPIRES" title="EXPIRES"></a>
+	<h3 class="subsubtitle method-title">EXPIRES</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>静态方法，返回 EXPIRES 字符串</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NSString *)EXPIRES</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>静态方法，返回 EXPIRES 字符串</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">HttpHeaders.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/HOST" title="HOST"></a>
+	<h3 class="subsubtitle method-title">HOST</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>静态方法，返回 HOST 字符串</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NSString *)HOST</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>静态方法，返回 HOST 字符串</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">HttpHeaders.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/LAST_MODIFIED" title="LAST_MODIFIED"></a>
+	<h3 class="subsubtitle method-title">LAST_MODIFIED</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>静态方法，返回 LAST_MODIFIED 字符串</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NSString *)LAST_MODIFIED</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>静态方法，返回 LAST_MODIFIED 字符串</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">HttpHeaders.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/LOCATION" title="LOCATION"></a>
+	<h3 class="subsubtitle method-title">LOCATION</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>静态方法，返回 LOCATION 字符串</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NSString *)LOCATION</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>静态方法，返回 LOCATION 字符串</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">HttpHeaders.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/RANGE" title="RANGE"></a>
+	<h3 class="subsubtitle method-title">RANGE</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>静态方法，返回 RANGE 字符串</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NSString *)RANGE</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>静态方法，返回 RANGE 字符串</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">HttpHeaders.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2012 igis.me. All rights reserved. (Last updated: 2012-09-01)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 789)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>
